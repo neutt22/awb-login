@@ -9,6 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+        <link rel="stylesheet" href="/css/foundation.css" media="screen">
+        <link rel="stylesheet" href="/css/main.css" media="screen">
 
         <!-- Styles -->
         <style>
