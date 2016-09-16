@@ -1,1 +1,209 @@
-@import "util/util";
+@import 'util/util';
+@import 'compass';
+
+$accent: #4183d7;
+$body-bg-color: rgb(236, 240, 241);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $body-bg-color;
+}
+
+/* MENU BAR ==============================================================*/
+
+$menu-color: #0d0d0d;
+$menu-bg-color: rgba(255, 255, 255, 0.9);
+$menu-sub-highlight: #bdc3c7;
+
+@mixin link-icon($path, $w: 25px, $h: 25px) {
+  content: '';
+  background-image: url($path);
+  background-size: cover;
+  width: $w;
+  height: $h;
+  position: absolute;
+  margin-left: 4px;
+
+  @include breakpoint(small only){
+    top: 3px;
+    width: $w - 5px;
+    height: $h - 5px;
+  }
+}
+
+@mixin menu-common() {
+  text-align: center;
+  position: relative;
+}
+
+.m-util {
+  @include breakpoint(small only){
+    margin-top: 20px;
+  }
+}
+
+.menu-container {
+  background-color: $menu-bg-color;
+}
+
+.menu {
+  padding: 10px 0;
+  font-weight: 700;
+
+  a {
+    text-decoration: none;
+    color: $menu-color;
+  }
+}
+
+.logo {
+  @include breakpoint(small only){
+    text-align: center;
+  }
+}
+
+.logo img {
+  text-align: center;
+  width: 100px;
+  transition: filter .3s;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+.get-support {
+  @include menu-common;
+  cursor: pointer;
+
+  div {
+
+    span {
+      @include transition-property(color);
+      @include transition-duration(.25s);
+      @include transition-timing-function(linear);
+
+      @include breakpoint(small only){
+        font-size: 13px;
+      }
+    }
+
+    &:after {
+      @include link-icon('../img/arrow-down.png');
+    }
+
+    &:hover {
+      .support-sub-menu {
+        display: block;
+      }
+
+      span {
+        color: $accent;
+      }
+    }
+  }
+
+}
+
+.support-sub-menu {
+  display: none;
+  position: absolute;
+  left: -12px;
+  right: 0;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include box-shadow(rgba(0, 0, 0, .05) 0 0 10px);
+
+  li {
+    font-weight: 300;
+    text-align: right;
+
+    a {
+      padding: 5px 10px;
+      display: block;
+      transition: all .25s;
+
+      &:hover {
+        color: white;
+        background-color: $menu-sub-highlight;
+      }
+
+      img {
+        width: 20px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.my-account {
+  @include menu-common;
+
+  a span:after {
+    @include link-icon('../img/account-2.png', 21px, 21px);
+  }
+
+  span {
+    @include transition-property(color);
+    @include transition-duration(.25s);
+    @include transition-timing-function(linear);
+
+    @include breakpoint(small only){
+      font-size: 13px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.my-cart {
+  @include menu-common;
+
+  img {
+    width: 35px;
+  }
+
+  @include breakpoint(small only){
+    img {
+      width: 25px;
+    }
+  }
+
+  a {
+    position: relative;
+
+    img {
+
+      transition: all .25s;
+
+      &:hover {
+        filter: drop-shadow(0 0 3px $accent);
+      }
+    }
+
+    span {
+      text-align: center;
+      color: white;
+      content: '9';
+      width: 23px;
+      height: 23px;
+      position: absolute;
+      top: -13px;
+      left: 23px;
+      background-color: red;
+      @include border-radius(50%);
+
+      @include breakpoint(small only){
+        width: 20px;
+        height: 20px;
+        left: 15px;
+        top: -9px;
+        font-size: 13px;
+      }
+    }
+  }
+}

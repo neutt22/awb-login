@@ -1,0 +1,239 @@
+/* line 7, ../scss/main.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ecf0f1;
+}
+
+/* MENU BAR ==============================================================*/
+@media screen and (max-width: 39.9375em) {
+  /* line 39, ../scss/main.scss */
+  .m-util {
+    margin-top: 20px;
+  }
+}
+
+/* line 45, ../scss/main.scss */
+.menu-container {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 49, ../scss/main.scss */
+.menu {
+  padding: 10px 0;
+  font-weight: 700;
+}
+/* line 53, ../scss/main.scss */
+.menu a {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+
+@media screen and (max-width: 39.9375em) {
+  /* line 59, ../scss/main.scss */
+  .logo {
+    text-align: center;
+  }
+}
+
+/* line 65, ../scss/main.scss */
+.logo img {
+  text-align: center;
+  width: 100px;
+  transition: filter .3s;
+}
+/* line 70, ../scss/main.scss */
+.logo img:hover {
+  filter: brightness(120%);
+}
+
+/* line 75, ../scss/main.scss */
+.get-support {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+/* line 81, ../scss/main.scss */
+.get-support div span {
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 81, ../scss/main.scss */
+  .get-support div span {
+    font-size: 13px;
+  }
+}
+/* line 91, ../scss/main.scss */
+.get-support div:after {
+  content: '';
+  background-image: url("../img/arrow-down.png");
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-left: 4px;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 91, ../scss/main.scss */
+  .get-support div:after {
+    top: 3px;
+    width: 20px;
+    height: 20px;
+  }
+}
+/* line 96, ../scss/main.scss */
+.get-support div:hover .support-sub-menu {
+  display: block;
+}
+/* line 100, ../scss/main.scss */
+.get-support div:hover span {
+  color: #4183d7;
+}
+
+/* line 108, ../scss/main.scss */
+.support-sub-menu {
+  display: none;
+  position: absolute;
+  left: -12px;
+  right: 0;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px;
+}
+/* line 119, ../scss/main.scss */
+.support-sub-menu li {
+  font-weight: 300;
+  text-align: right;
+}
+/* line 123, ../scss/main.scss */
+.support-sub-menu li a {
+  padding: 5px 10px;
+  display: block;
+  transition: all .25s;
+}
+/* line 128, ../scss/main.scss */
+.support-sub-menu li a:hover {
+  color: white;
+  background-color: #bdc3c7;
+}
+/* line 133, ../scss/main.scss */
+.support-sub-menu li a img {
+  width: 20px;
+  margin-left: 8px;
+}
+
+/* line 141, ../scss/main.scss */
+.my-account {
+  text-align: center;
+  position: relative;
+}
+/* line 144, ../scss/main.scss */
+.my-account a span:after {
+  content: '';
+  background-image: url("../img/account-2.png");
+  background-size: cover;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  margin-left: 4px;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 144, ../scss/main.scss */
+  .my-account a span:after {
+    top: 3px;
+    width: 16px;
+    height: 16px;
+  }
+}
+/* line 148, ../scss/main.scss */
+.my-account span {
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 148, ../scss/main.scss */
+  .my-account span {
+    font-size: 13px;
+  }
+}
+/* line 157, ../scss/main.scss */
+.my-account span:hover {
+  color: #4183d7;
+}
+
+/* line 163, ../scss/main.scss */
+.my-cart {
+  text-align: center;
+  position: relative;
+}
+/* line 166, ../scss/main.scss */
+.my-cart img {
+  width: 35px;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 171, ../scss/main.scss */
+  .my-cart img {
+    width: 25px;
+  }
+}
+/* line 176, ../scss/main.scss */
+.my-cart a {
+  position: relative;
+}
+/* line 179, ../scss/main.scss */
+.my-cart a img {
+  transition: all .25s;
+}
+/* line 183, ../scss/main.scss */
+.my-cart a img:hover {
+  filter: drop-shadow(0 0 3px #4183d7);
+}
+/* line 188, ../scss/main.scss */
+.my-cart a span {
+  text-align: center;
+  color: white;
+  content: '9';
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: -13px;
+  left: 23px;
+  background-color: red;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 188, ../scss/main.scss */
+  .my-cart a span {
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    top: -9px;
+    font-size: 13px;
+  }
+}
