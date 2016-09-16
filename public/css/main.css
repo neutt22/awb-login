@@ -237,3 +237,85 @@ body {
     font-size: 13px;
   }
 }
+
+/* CAROUSEL ==============================================================*/
+/* line 213, ../scss/main.scss */
+.carousel-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 220, ../scss/main.scss */
+.carousel-container .search-container {
+  border: 2px solid #4183d7;
+  background-color: white;
+}
+/* line 231, ../scss/main.scss */
+.carousel-container .search-container form div div:last-child button {
+  background-color: #4183d7;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 231, ../scss/main.scss */
+  .carousel-container .search-container form div div:last-child button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/* line 244, ../scss/main.scss */
+.carousel-container .search-container form div div:last-child button:after {
+  content: 'Search';
+}
+@media screen and (min-width: 40em) {
+  /* line 244, ../scss/main.scss */
+  .carousel-container .search-container form div div:last-child button:after {
+    content: '';
+  }
+}
+/* line 252, ../scss/main.scss */
+.carousel-container .search-container form div div:last-child button img {
+  width: 45px;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 252, ../scss/main.scss */
+  .carousel-container .search-container form div div:last-child button img {
+    display: none;
+  }
+}
+/* line 263, ../scss/main.scss */
+.carousel-container .search-container input[type='text'] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  padding: 15px;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 263, ../scss/main.scss */
+  .carousel-container .search-container input[type='text'] {
+    font-size: 20px;
+  }
+}
+/* line 277, ../scss/main.scss */
+.carousel-container .slide-item {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 286, ../scss/main.scss */
+.carousel-container .slide-item img {
+  width: 100%;
+}

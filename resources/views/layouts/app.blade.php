@@ -24,8 +24,13 @@
 
         @include('menu-bar')
 
+        @yield('contents')
+
         <script src="js/jquery-3.1.0.min.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
+
+        @yield('custom-js')
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
