@@ -15,44 +15,47 @@ body {
 /* line 45, ../scss/main.scss */
 .menu-container {
   background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
-/* line 49, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 .menu {
   padding: 10px 0;
   font-weight: 700;
 }
-/* line 53, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 .menu a {
   text-decoration: none;
   color: #0d0d0d;
 }
 
 @media screen and (max-width: 39.9375em) {
-  /* line 59, ../scss/main.scss */
+  /* line 62, ../scss/main.scss */
   .logo {
     text-align: center;
   }
 }
 
-/* line 65, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 .logo img {
   text-align: center;
   width: 100px;
   transition: filter .3s;
 }
-/* line 70, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
 .logo img:hover {
   filter: brightness(120%);
 }
 
-/* line 75, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 .get-support {
   text-align: center;
   position: relative;
   cursor: pointer;
 }
-/* line 81, ../scss/main.scss */
+/* line 84, ../scss/main.scss */
 .get-support div span {
   -moz-transition-property: color;
   -o-transition-property: color;
@@ -68,12 +71,12 @@ body {
   transition-timing-function: linear;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 81, ../scss/main.scss */
+  /* line 84, ../scss/main.scss */
   .get-support div span {
     font-size: 13px;
   }
 }
-/* line 91, ../scss/main.scss */
+/* line 94, ../scss/main.scss */
 .get-support div:after {
   content: '';
   background-image: url("../img/arrow-down.png");
@@ -84,23 +87,23 @@ body {
   margin-left: 4px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 91, ../scss/main.scss */
+  /* line 94, ../scss/main.scss */
   .get-support div:after {
     top: 3px;
     width: 20px;
     height: 20px;
   }
 }
-/* line 96, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 .get-support div:hover .support-sub-menu {
   display: block;
 }
-/* line 100, ../scss/main.scss */
+/* line 103, ../scss/main.scss */
 .get-support div:hover span {
   color: #4183d7;
 }
 
-/* line 108, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 .support-sub-menu {
   display: none;
   position: absolute;
@@ -114,34 +117,41 @@ body {
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px;
 }
-/* line 119, ../scss/main.scss */
+@media screen and (max-width: 39.9375em) {
+  /* line 111, ../scss/main.scss */
+  .support-sub-menu {
+    right: -75px;
+    font-size: 13px;
+  }
+}
+/* line 127, ../scss/main.scss */
 .support-sub-menu li {
   font-weight: 300;
   text-align: right;
 }
-/* line 123, ../scss/main.scss */
+/* line 131, ../scss/main.scss */
 .support-sub-menu li a {
   padding: 5px 10px;
   display: block;
   transition: all .25s;
 }
-/* line 128, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .support-sub-menu li a:hover {
   color: white;
   background-color: #bdc3c7;
 }
-/* line 133, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
 .support-sub-menu li a img {
   width: 20px;
   margin-left: 8px;
 }
 
-/* line 141, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 .my-account {
   text-align: center;
   position: relative;
 }
-/* line 144, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 .my-account a span:after {
   content: '';
   background-image: url("../img/account-2.png");
@@ -152,14 +162,14 @@ body {
   margin-left: 4px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 144, ../scss/main.scss */
+  /* line 152, ../scss/main.scss */
   .my-account a span:after {
     top: 3px;
     width: 16px;
     height: 16px;
   }
 }
-/* line 148, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .my-account span {
   -moz-transition-property: color;
   -o-transition-property: color;
@@ -175,44 +185,44 @@ body {
   transition-timing-function: linear;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 148, ../scss/main.scss */
+  /* line 156, ../scss/main.scss */
   .my-account span {
     font-size: 13px;
   }
 }
-/* line 157, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 .my-account span:hover {
   color: #4183d7;
 }
 
-/* line 163, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .my-cart {
   text-align: center;
   position: relative;
 }
-/* line 166, ../scss/main.scss */
+/* line 174, ../scss/main.scss */
 .my-cart img {
   width: 35px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 171, ../scss/main.scss */
+  /* line 179, ../scss/main.scss */
   .my-cart img {
     width: 25px;
   }
 }
-/* line 176, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 .my-cart a {
   position: relative;
 }
-/* line 179, ../scss/main.scss */
+/* line 187, ../scss/main.scss */
 .my-cart a img {
   transition: all .25s;
 }
-/* line 183, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 .my-cart a img:hover {
   filter: drop-shadow(0 0 3px #4183d7);
 }
-/* line 188, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 .my-cart a span {
   text-align: center;
   color: white;
@@ -228,7 +238,7 @@ body {
   border-radius: 50%;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 188, ../scss/main.scss */
+  /* line 196, ../scss/main.scss */
   .my-cart a span {
     width: 20px;
     height: 20px;
@@ -239,19 +249,29 @@ body {
 }
 
 /* CAROUSEL ==============================================================*/
-/* line 213, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 .carousel-container {
   width: 100%;
   position: relative;
   text-align: center;
   overflow: hidden;
 }
-/* line 220, ../scss/main.scss */
+@media screen and (max-width: 39.9375em) {
+  /* line 221, ../scss/main.scss */
+  .carousel-container {
+    background-image: url("../img/slide/slide-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #333;
+  }
+}
+/* line 234, ../scss/main.scss */
 .carousel-container .search-container {
   border: 2px solid #4183d7;
   background-color: white;
+  margin-top: 200px;
 }
-/* line 231, ../scss/main.scss */
+/* line 246, ../scss/main.scss */
 .carousel-container .search-container form div div:last-child button {
   background-color: #4183d7;
   width: 100%;
@@ -261,33 +281,33 @@ body {
   font-size: 20px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 231, ../scss/main.scss */
+  /* line 246, ../scss/main.scss */
   .carousel-container .search-container form div div:last-child button {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-/* line 244, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .carousel-container .search-container form div div:last-child button:after {
   content: 'Search';
 }
 @media screen and (min-width: 40em) {
-  /* line 244, ../scss/main.scss */
+  /* line 259, ../scss/main.scss */
   .carousel-container .search-container form div div:last-child button:after {
     content: '';
   }
 }
-/* line 252, ../scss/main.scss */
+/* line 267, ../scss/main.scss */
 .carousel-container .search-container form div div:last-child button img {
   width: 45px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 252, ../scss/main.scss */
+  /* line 267, ../scss/main.scss */
   .carousel-container .search-container form div div:last-child button img {
     display: none;
   }
 }
-/* line 263, ../scss/main.scss */
+/* line 278, ../scss/main.scss */
 .carousel-container .search-container input[type='text'] {
   width: 100%;
   height: 100%;
@@ -297,12 +317,47 @@ body {
   padding: 15px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 263, ../scss/main.scss */
+  /* line 278, ../scss/main.scss */
   .carousel-container .search-container input[type='text'] {
     font-size: 20px;
   }
 }
-/* line 277, ../scss/main.scss */
+/* line 292, ../scss/main.scss */
+.carousel-container .example-search {
+  text-align: left;
+  font-size: 13px;
+  color: white;
+  display: block;
+  margin-top: 5px;
+}
+/* line 302, ../scss/main.scss */
+.carousel-container .title h1 {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 302, ../scss/main.scss */
+  .carousel-container .title h1 {
+    font-size: 30px;
+  }
+}
+/* line 314, ../scss/main.scss */
+.carousel-container .title p {
+  color: white;
+  font-size: 45px;
+  font-weight: 100;
+  margin-top: 0;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 314, ../scss/main.scss */
+  .carousel-container .title p {
+    font-size: 25px;
+  }
+}
+/* line 326, ../scss/main.scss */
 .carousel-container .slide-item {
   position: absolute;
   top: 0;
@@ -315,7 +370,13 @@ body {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 286, ../scss/main.scss */
+/* line 335, ../scss/main.scss */
 .carousel-container .slide-item img {
   width: 100%;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 326, ../scss/main.scss */
+  .carousel-container .slide-item {
+    display: none;
+  }
 }

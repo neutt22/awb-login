@@ -44,6 +44,9 @@ $menu-sub-highlight: #bdc3c7;
 
 .menu-container {
   background-color: $menu-bg-color;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .menu {
@@ -115,6 +118,11 @@ $menu-sub-highlight: #bdc3c7;
   margin: 0;
   padding: 0;
   @include box-shadow(rgba(0, 0, 0, .05) 0 0 10px);
+
+  @include breakpoint(small only){
+    right: -75px;
+    font-size: 13px;
+  }
 
   li {
     font-weight: 300;
@@ -214,12 +222,19 @@ $menu-sub-highlight: #bdc3c7;
   width: 100%;
   position: relative;
   text-align: center;
-  // background-color: hotpink;
   overflow: hidden;
+
+  @include breakpoint(small only){
+      background-image: url('../img/slide/slide-3.jpg');
+      background-position: center;
+      background-size: cover;
+      background-color: #333;
+  }
 
   .search-container {
       border: 2px solid $accent;
       background-color: white;
+      margin-top: 200px;
 
       form div div {
         &:first-child {
@@ -274,6 +289,40 @@ $menu-sub-highlight: #bdc3c7;
       }
   }
 
+  .example-search {
+    text-align: left;
+    font-size: 13px;
+    color: white;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .title {
+
+    h1 {
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 60px;
+      color: white;
+      margin-bottom: 10px;
+
+      @include breakpoint(small only){
+        font-size: 30px;
+      }
+    }
+
+    p {
+      color: white;
+      font-size: 45px;
+      font-weight: 100;
+      margin-top: 0;
+
+      @include breakpoint(small only){
+        font-size: 25px;
+      }
+    }
+  }
+
   .slide-item {
     // Don't stack images
     position: absolute;
@@ -286,5 +335,10 @@ $menu-sub-highlight: #bdc3c7;
     img {
       width: 100%;
     }
+
+    @include breakpoint(small only){
+        display: none;
+    }
   }
+
 }

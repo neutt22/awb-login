@@ -20,25 +20,34 @@
         </form>
       </div>
     </div>
+    <div class="columns small-12 medium-10 large-8">
+      <span class="example-search">Examples: AE706100-1, AE706477-24, AE70644-14</span>
+    </div>
+    <div class="columns small-12 medium-12 large-8 title">
+      <h1>Welcome to LogIn</h1>
+      <p>
+        The online tool to search, buy, and sell aircraft parts.
+      </p>
+    </div>
   </div>
 
   <div class="slide-item">
     <img src="img/slide/slide-1.jpg" alt="slide 1" />
   </div>
   <div class="slide-item">
-    <img src="img/slide/slide-2.jpeg" alt="slide 1" />
+    <img src="img/slide/slide-2.jpeg" alt="slide 2" />
   </div>
   <div class="slide-item">
-    <img src="img/slide/slide-3.jpg" alt="slide 1" />
+    <img src="img/slide/slide-3.jpg" alt="slide 3" />
   </div>
   <div class="slide-item">
-    <img src="img/slide/slide-4.jpg" alt="slide 1" />
+    <img src="img/slide/slide-4.jpg" alt="slide 4" />
   </div>
   <div class="slide-item">
-    <img src="img/slide/slide-5.jpg" alt="slide 1" />
+    <img src="img/slide/slide-5.jpg" alt="slide 5" />
   </div>
   <div class="slide-item">
-    <img src="img/slide/slide-6.jpg" alt="slide 1" />
+    <img src="img/slide/slide-6.jpg" alt="slide 6" />
   </div>
 </div>
 

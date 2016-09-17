@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 8]>
