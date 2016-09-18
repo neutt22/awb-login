@@ -380,3 +380,82 @@ body {
     display: none;
   }
 }
+
+/* FOOTER ==============================================================*/
+/* line 348, ../scss/main.scss */
+footer {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+/* line 353, ../scss/main.scss */
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 357, ../scss/main.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+/* line 362, ../scss/main.scss */
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 366, ../scss/main.scss */
+footer ul li {
+  list-style: none;
+}
+/* line 369, ../scss/main.scss */
+footer ul li a, footer ul li p {
+  font-size: 12px;
+}
+/* line 375, ../scss/main.scss */
+footer .footer-brand li a img {
+  width: 60px;
+  margin-right: 10px;
+  transition: filter .3s;
+}
+/* line 380, ../scss/main.scss */
+footer .footer-brand li a img:hover {
+  filter: brightness(120%);
+}
+/* line 385, ../scss/main.scss */
+footer .footer-brand li a {
+  font-size: 19px;
+  transition: all .3s;
+}
+/* line 389, ../scss/main.scss */
+footer .footer-brand li a:hover {
+  text-decoration: none;
+  color: #4183d7;
+}
+/* line 395, ../scss/main.scss */
+footer .social-icons {
+  text-align: right;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 395, ../scss/main.scss */
+  footer .social-icons {
+    text-align: center;
+  }
+}
+/* line 402, ../scss/main.scss */
+footer .social-icons li {
+  display: inline-block;
+}
+/* line 407, ../scss/main.scss */
+footer .social-icons li a img {
+  width: 25px;
+}
+/* line 414, ../scss/main.scss */
+footer .copyright {
+  margin-top: 15px;
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 417, ../scss/main.scss */
+  footer .copyright div:first-child {
+    text-align: center;
+    margin-top: 10px;
+  }
+}

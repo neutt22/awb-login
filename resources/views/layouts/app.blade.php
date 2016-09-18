@@ -26,6 +26,8 @@
 
         @yield('contents')
 
+        @include('footer')
+
         <script src="js/jquery-3.1.0.min.js"></script>
         <script src="js/app.js"></script>
         <script src="js/main.js"></script>
