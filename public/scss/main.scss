@@ -47,6 +47,7 @@ $menu-sub-highlight: #bdc3c7;
   position: fixed;
   width: 100%;
   z-index: 999;
+  @include box-shadow(0 0 10px rgba(121, 121, 121, 0.23));
 }
 
 .menu {
@@ -224,7 +225,7 @@ $menu-sub-highlight: #bdc3c7;
   text-align: center;
   overflow: hidden;
 
-  @include breakpoint(small only){
+  @include breakpoint(medium down){
       background-image: url('../img/slide/slide-3.jpg');
       background-position: center;
       background-size: cover;
@@ -235,6 +236,11 @@ $menu-sub-highlight: #bdc3c7;
       border: 2px solid $accent;
       background-color: white;
       margin-top: 200px;
+      @include transition(all .25s);
+
+      // &:focus, &:active {
+      //   @include box-shadow(0 0 20px white);
+      // }
 
       form div div {
         &:first-child {
@@ -341,6 +347,17 @@ $menu-sub-highlight: #bdc3c7;
     }
   }
 
+}
+
+.hero-footer {
+  color: white;
+  background-color: $accent;
+  text-align: center;
+  padding: 5px;
+
+  @include breakpoint(small only){
+    display: none;
+  }
 }
 
 /* FOOTER ==============================================================*/

@@ -24,7 +24,7 @@
         <li><a href="#">Contact Us</a></li>
       </ul>
     </div>
-    <div class="small-12 medium-12 columns">
+    <div class="small-12 medium-2 columns">
       <div class="social-feeds-section">
         social feeds section
       </div>
