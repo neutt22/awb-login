@@ -236,11 +236,7 @@ $menu-sub-highlight: #bdc3c7;
       border: 2px solid $accent;
       background-color: white;
       margin-top: 200px;
-      @include transition(all .25s);
-
-      // &:focus, &:active {
-      //   @include box-shadow(0 0 20px white);
-      // }
+      @include transition(all .15s);
 
       form div div {
         &:first-child {
@@ -256,10 +252,15 @@ $menu-sub-highlight: #bdc3c7;
             border: 1px solid white;
             color: white;
             font-size: 20px;
+            @include transition(background-color .25s);
 
             @include breakpoint(small only){
               padding-top: 10px;
               padding-bottom: 10px;
+            }
+
+            &:hover {
+              background-color: darken($accent, 10%);
             }
 
             &:after {

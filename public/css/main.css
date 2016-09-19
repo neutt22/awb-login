@@ -273,12 +273,12 @@ body {
   border: 2px solid #4183d7;
   background-color: white;
   margin-top: 200px;
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
 }
-/* line 252, ../scss/main.scss */
+/* line 248, ../scss/main.scss */
 .carousel-container .search-container form div div:last-child button {
   background-color: #4183d7;
   width: 100%;
@@ -286,35 +286,43 @@ body {
   border: 1px solid white;
   color: white;
   font-size: 20px;
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 252, ../scss/main.scss */
+  /* line 248, ../scss/main.scss */
   .carousel-container .search-container form div div:last-child button {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-/* line 265, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
+.carousel-container .search-container form div div:last-child button:hover {
+  background-color: #286abd;
+}
+/* line 266, ../scss/main.scss */
 .carousel-container .search-container form div div:last-child button:after {
   content: 'Search';
 }
 @media screen and (min-width: 40em) {
-  /* line 265, ../scss/main.scss */
+  /* line 266, ../scss/main.scss */
   .carousel-container .search-container form div div:last-child button:after {
     content: '';
   }
 }
-/* line 273, ../scss/main.scss */
+/* line 274, ../scss/main.scss */
 .carousel-container .search-container form div div:last-child button img {
   width: 45px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 273, ../scss/main.scss */
+  /* line 274, ../scss/main.scss */
   .carousel-container .search-container form div div:last-child button img {
     display: none;
   }
 }
-/* line 284, ../scss/main.scss */
+/* line 285, ../scss/main.scss */
 .carousel-container .search-container input[type='text'] {
   width: 100%;
   height: 100%;
@@ -324,12 +332,12 @@ body {
   padding: 15px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 284, ../scss/main.scss */
+  /* line 285, ../scss/main.scss */
   .carousel-container .search-container input[type='text'] {
     font-size: 20px;
   }
 }
-/* line 298, ../scss/main.scss */
+/* line 299, ../scss/main.scss */
 .carousel-container .example-search {
   text-align: left;
   font-size: 13px;
@@ -337,7 +345,7 @@ body {
   display: block;
   margin-top: 5px;
 }
-/* line 308, ../scss/main.scss */
+/* line 309, ../scss/main.scss */
 .carousel-container .title h1 {
   font-family: 'Montserrat', 'Roboto', sans-serif;
   font-weight: 700;
@@ -346,12 +354,12 @@ body {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 308, ../scss/main.scss */
+  /* line 309, ../scss/main.scss */
   .carousel-container .title h1 {
     font-size: 30px;
   }
 }
-/* line 320, ../scss/main.scss */
+/* line 321, ../scss/main.scss */
 .carousel-container .title p {
   color: white;
   font-size: 45px;
@@ -359,12 +367,12 @@ body {
   margin-top: 0;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 320, ../scss/main.scss */
+  /* line 321, ../scss/main.scss */
   .carousel-container .title p {
     font-size: 25px;
   }
 }
-/* line 332, ../scss/main.scss */
+/* line 333, ../scss/main.scss */
 .carousel-container .slide-item {
   position: absolute;
   top: 0;
@@ -377,18 +385,18 @@ body {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 341, ../scss/main.scss */
+/* line 342, ../scss/main.scss */
 .carousel-container .slide-item img {
   width: 100%;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 332, ../scss/main.scss */
+  /* line 333, ../scss/main.scss */
   .carousel-container .slide-item {
     display: none;
   }
 }
 
-/* line 352, ../scss/main.scss */
+/* line 353, ../scss/main.scss */
 .hero-footer {
   color: white;
   background-color: #4183d7;
@@ -396,85 +404,85 @@ body {
   padding: 5px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 352, ../scss/main.scss */
+  /* line 353, ../scss/main.scss */
   .hero-footer {
     display: none;
   }
 }
 
 /* FOOTER ==============================================================*/
-/* line 365, ../scss/main.scss */
+/* line 366, ../scss/main.scss */
 footer {
   background-color: white;
   padding-top: 20px;
   padding-bottom: 15px;
 }
-/* line 370, ../scss/main.scss */
+/* line 371, ../scss/main.scss */
 footer a {
   text-decoration: none;
   color: inherit;
 }
-/* line 374, ../scss/main.scss */
+/* line 375, ../scss/main.scss */
 footer a:hover {
   text-decoration: underline;
 }
-/* line 379, ../scss/main.scss */
+/* line 380, ../scss/main.scss */
 footer ul {
   margin: 0;
   padding: 0;
 }
-/* line 383, ../scss/main.scss */
+/* line 384, ../scss/main.scss */
 footer ul li {
   list-style: none;
 }
-/* line 386, ../scss/main.scss */
+/* line 387, ../scss/main.scss */
 footer ul li a, footer ul li p {
   font-size: 12px;
 }
-/* line 392, ../scss/main.scss */
+/* line 393, ../scss/main.scss */
 footer .footer-brand li a img {
   width: 60px;
   margin-right: 10px;
   transition: filter .3s;
 }
-/* line 397, ../scss/main.scss */
+/* line 398, ../scss/main.scss */
 footer .footer-brand li a img:hover {
   filter: brightness(120%);
 }
-/* line 402, ../scss/main.scss */
+/* line 403, ../scss/main.scss */
 footer .footer-brand li a {
   font-size: 19px;
   transition: all .3s;
 }
-/* line 406, ../scss/main.scss */
+/* line 407, ../scss/main.scss */
 footer .footer-brand li a:hover {
   text-decoration: none;
   color: #4183d7;
 }
-/* line 412, ../scss/main.scss */
+/* line 413, ../scss/main.scss */
 footer .social-icons {
   text-align: right;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 412, ../scss/main.scss */
+  /* line 413, ../scss/main.scss */
   footer .social-icons {
     text-align: center;
   }
 }
-/* line 419, ../scss/main.scss */
+/* line 420, ../scss/main.scss */
 footer .social-icons li {
   display: inline-block;
 }
-/* line 424, ../scss/main.scss */
+/* line 425, ../scss/main.scss */
 footer .social-icons li a img {
   width: 25px;
 }
-/* line 431, ../scss/main.scss */
+/* line 432, ../scss/main.scss */
 footer .copyright {
   margin-top: 15px;
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 434, ../scss/main.scss */
+  /* line 435, ../scss/main.scss */
   footer .copyright div:first-child {
     text-align: center;
     margin-top: 10px;
