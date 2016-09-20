@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="columns small-4 medium-3 large-2 align-middle m-util my-account">
-      <a href="/my-account"><span>My Account</span></a>
+      <a href="/register"><span>My Account</span></a>
     </div>
     <div class="columns small-4 medium-1 large-1 align-middle m-util my-cart">
       <a href="#"><img src="img/cart.png" alt="cart" /><span class="cart-notif">3</span></a>
