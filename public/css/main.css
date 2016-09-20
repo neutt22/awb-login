@@ -517,35 +517,44 @@ footer .copyright {
 /* line 476, ../scss/main.scss */
 .registration h1 {
   font-family: 'Montserrat', 'Roboto', sans-serif;
+  margin-bottom: 10px;
 }
-/* line 480, ../scss/main.scss */
+/* line 481, ../scss/main.scss */
 .registration p {
   font-size: 18px;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
-/* line 486, ../scss/main.scss */
+/* line 488, ../scss/main.scss */
 .form-container {
-  background-color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 30px;
   margin-bottom: 40px;
   border-bottom: 5px solid #4183d7;
 }
-/* line 493, ../scss/main.scss */
-.form-container .registration-arrow {
-  top: -65px;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  background-color: white;
-  margin: auto;
-  -moz-transform: rotateZ(135deg);
-  -ms-transform: rotateZ(135deg);
-  -webkit-transform: rotateZ(135deg);
-  transform: rotateZ(135deg);
+/* line 496, ../scss/main.scss */
+.form-container label {
+  cursor: pointer;
 }
-/* line 503, ../scss/main.scss */
+/* line 500, ../scss/main.scss */
+.form-container .registration-arrow {
+  top: -30px;
+  position: relative;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 20px 25px;
+  border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
+}
+/* line 511, ../scss/main.scss */
 .form-container input:not([type='radio']):not([type='checkbox']), .form-container textarea {
   outline: none;
   border: 1px solid #cfcfcf;
@@ -556,59 +565,78 @@ footer .copyright {
   width: 100%;
   margin: 5px 0;
   background-color: #f5f5f5;
+  transition: all .25s;
 }
-/* line 513, ../scss/main.scss */
+/* line 521, ../scss/main.scss */
+.form-container input:not([type='radio']):not([type='checkbox']):focus, .form-container textarea:focus {
+  border-color: #4183d7;
+  background-color: #eaf1fa;
+  -moz-box-shadow: 0 0 10px rgba(65, 131, 215, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(65, 131, 215, 0.5);
+  box-shadow: 0 0 10px rgba(65, 131, 215, 0.5);
+}
+/* line 528, ../scss/main.scss */
 .form-container input[type='submit'] {
   background-color: #4183d7 !important;
   color: white;
   transition: all .25s;
 }
-/* line 518, ../scss/main.scss */
+/* line 533, ../scss/main.scss */
 .form-container input[type='submit']:hover {
   background-color: #286abd !important;
 }
-/* line 523, ../scss/main.scss */
+/* line 538, ../scss/main.scss */
+.form-container input[type='radio'] {
+  transform: scale(1.5, 1.5);
+  margin: 5px;
+}
+/* line 543, ../scss/main.scss */
+.form-container input[type='checkbox'] {
+  transform: scale(1.5, 1.5);
+}
+/* line 547, ../scss/main.scss */
 .form-container .tac {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 528, ../scss/main.scss */
+/* line 552, ../scss/main.scss */
 .form-container .tac input {
   margin-right: 10px;
 }
-/* line 532, ../scss/main.scss */
+/* line 556, ../scss/main.scss */
 .form-container .tac a {
   text-decoration: none;
   color: #4183d7;
   font-weight: bold;
 }
-/* line 539, ../scss/main.scss */
+/* line 563, ../scss/main.scss */
 .form-container .forgot-password {
   text-align: center;
   margin-top: 10px;
 }
-/* line 543, ../scss/main.scss */
+/* line 567, ../scss/main.scss */
 .form-container .forgot-password a {
   color: inherit;
   text-decoration: none;
   font-weight: 100;
 }
-/* line 548, ../scss/main.scss */
+/* line 572, ../scss/main.scss */
 .form-container .forgot-password a:hover {
   text-decoration: underline;
 }
 
-/* line 555, ../scss/main.scss */
+/* line 579, ../scss/main.scss */
 .login-now {
-  font-family: 'Montserrat', 'Roboto', sans-serif;
   text-align: center;
 }
-/* line 559, ../scss/main.scss */
+/* line 582, ../scss/main.scss */
 .login-now h1 {
   color: white;
+  font-weight: 300;
+  font-size: 18px;
 }
-/* line 562, ../scss/main.scss */
+/* line 587, ../scss/main.scss */
 .login-now h1 a {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -616,24 +644,43 @@ footer .copyright {
   text-decoration: none;
   color: white;
   background-color: #652c90;
-  padding: 10px;
+  padding: 8px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   transition: all .25s;
 }
-/* line 573, ../scss/main.scss */
+/* line 598, ../scss/main.scss */
 .login-now h1 a:hover {
   background-color: #286abd;
 }
+@media screen and (max-width: 39.9375em) {
+  /* line 587, ../scss/main.scss */
+  .login-now h1 a {
+    display: block;
+  }
+}
 
-/* line 580, ../scss/main.scss */
+/* line 609, ../scss/main.scss */
 .download-apps {
   margin-bottom: 40px;
 }
-/* line 583, ../scss/main.scss */
+/* line 612, ../scss/main.scss */
 .download-apps h1 {
-  font-family: 'Montserrat', 'Roboto', sans-serif;
   color: white;
+  font-weight: 300;
+  font-size: 18px;
   text-align: center;
+}
+/* line 619, ../scss/main.scss */
+.download-apps img {
+  width: 170px;
+}
+/* line 622, ../scss/main.scss */
+.download-apps img:first-child {
+  text-align: right;
+}
+/* line 627, ../scss/main.scss */
+.download-apps div:nth-of-type(2) {
+  text-align: right;
 }
