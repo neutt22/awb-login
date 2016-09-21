@@ -1,8 +1,6 @@
 @import 'util/util';
 @import 'compass';
-
-$accent: #4183d7;
-$body-bg-color: rgb(236, 240, 241);
+@import "main-settings";
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -45,6 +43,7 @@ $menu-sub-highlight: #bdc3c7;
 .menu-container {
   background-color: $menu-bg-color;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 999;
   @include box-shadow(0 0 10px rgba(121, 121, 121, 0.23));
@@ -155,7 +154,7 @@ $menu-sub-highlight: #bdc3c7;
 .my-account {
   @include menu-common;
 
-  a span:after {
+  span:after {
     @include link-icon('../img/account-2.png', 21px, 21px);
   }
 
@@ -168,8 +167,12 @@ $menu-sub-highlight: #bdc3c7;
       font-size: 13px;
     }
 
-    &:hover {
-      color: $accent;
+    a {
+      @include transition(all .25s);
+
+      &:hover {
+        color: $accent;
+      }
     }
   }
 }
@@ -454,18 +457,10 @@ $border-color: #cfcfcf;
 $field-bg: #f5f5f5;
 
 .registration {
-  margin-top: 200px;
+  margin-top: 130px;
 
   .registration-bg {
-    position: fixed;
-    background-image: url('../img/slide/slide-3.jpg');
-    background-position: center;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
+    @include fixed-bg-image('../img/slide/slide-3.jpg');
   }
 
   h1, p {
@@ -486,53 +481,30 @@ $field-bg: #f5f5f5;
 }
 
 .form-container {
-    @include border-top-left-radius(10px);
-    @include border-top-right-radius(10px);
-    background-color: rgba(255,255,255,.80);
+    background-color: $form-bg-color;
     padding: 10px 30px;
+    padding-bottom: 30px;
     margin-bottom: 40px;
-    border-bottom: 5px solid $accent;
+    @include form-accent;
 
     label {
       cursor: pointer;
     }
 
     .registration-arrow {
-      top: -30px;
-      position: relative;
-      margin: auto;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 25px 20px 25px;
-      border-color: transparent transparent rgba(255,255,255,.80) transparent;
+      @include triangle;
     }
 
     input:not([type='radio']):not([type='checkbox']), textarea {
-      outline: none;
-      border: 1px solid $border-color;
-      @include border-radius(5px);
-      padding: 8px;
-      width: 100%;
-      margin: 5px 0;
-      background-color: $field-bg;
-      transition: all .25s;
+      @include input-default;
 
       &:focus {
-        border-color: $accent;
-        background-color: lighten($accent, 40%);
-        @include box-shadow(0 0 10px rgba(65,131,215,0.5));
+        @include input-focus;
       }
     }
 
     input[type='submit'] {
-      background-color: $accent !important;
-      color: white;
-      transition: all .25s;
-
-      &:hover {
-        background-color: darken($accent, 10%) !important;
-      }
+      @include button-default;
     }
 
     input[type='radio'] {
@@ -559,21 +531,6 @@ $field-bg: #f5f5f5;
         font-weight: bold;
       }
     }
-
-    .forgot-password {
-      text-align: center;
-      margin-top: 10px;
-
-      a {
-        color: inherit;
-        text-decoration: none;
-        font-weight: 100;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
 }
 
 .login-now {
@@ -587,7 +544,7 @@ $field-bg: #f5f5f5;
     a {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 15px;
       text-decoration: none;
       color: white;
       background-color: #652c90;
@@ -627,4 +584,79 @@ $field-bg: #f5f5f5;
   div:nth-of-type(2){
     text-align: right;
   }
+}
+
+/* LOGIN CONTAINER ============================================================*/
+
+.login-header {
+    margin-top: 130px;
+    text-align: center;
+    color: white;
+
+    h1 {
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+}
+
+.login-container {
+  background-color: $form-bg-color;
+  padding: 10px 30px 30px 30px;
+  margin-bottom: 40px;
+  @include form-accent;
+
+  .login-arrow {
+    @include triangle;
+  }
+
+  input:not([type='checkbox']) {
+    @include input-default;
+
+    &:focus {
+      @include input-focus;
+    }
+  }
+
+  input[type='checkbox'] {
+    transform: scale(1.5, 1.5);
+    margin-left: 4px;
+    margin-right: 10px;
+  }
+
+  input[type='submit'] {
+    @include button-default;
+  }
+
+  form div:nth-of-type(3){
+    margin-bottom: 20px;
+
+    label {
+      color: $form-label-color;
+      cursor: pointer;
+    }
+  }
+
+  form div:nth-of-type(5){
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $form-label-color;
+
+    &:hover {
+      color: $accent;
+      text-decoration: underline;
+    }
+  }
+}
+
+.login-bg {
+  @include fixed-bg-image('../img/slide/slide-3.jpg');
 }
