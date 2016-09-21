@@ -1,0 +1,67 @@
+$accent: #4183d7;
+$body-bg-color: rgb(236, 240, 241);
+
+$form-bg-color: rgba(255,255,255,.80);
+$form-label-color: #696969;
+
+// White triangle serves as form style
+@mixin triangle {
+  top: -30px;
+  position: relative;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 20px 25px;
+  border-color: transparent transparent rgba(255,255,255,.80) transparent;
+}
+
+// Fixed full screen background image
+@mixin fixed-bg-image($image) {
+  position: fixed;
+  background-image: url($image);
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+// Blue border-bottom line on every form
+@mixin form-accent {
+  border-bottom: 5px solid $accent;
+  @include border-top-left-radius(10px);
+  @include border-top-right-radius(10px);
+}
+
+// Default style for input
+@mixin input-default {
+  outline: none;
+  border: 1px solid $border-color;
+  @include border-radius(5px);
+  padding: 8px;
+  width: 100%;
+  margin: 5px 0;
+  background-color: $field-bg;
+  transition: all .25s;
+}
+
+// Default animation when input in focus state
+@mixin input-focus {
+  border-color: $accent;
+  background-color: lighten($accent, 40%);
+  @include box-shadow(0 0 10px rgba(65,131,215,0.5));
+}
+
+// Default button style
+@mixin button-default {
+  background-color: $accent !important;
+  color: white;
+  transition: all .25s;
+
+  &:hover {
+    background-color: darken($accent, 10%) !important;
+  }
+}

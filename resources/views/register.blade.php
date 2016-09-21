@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Registration - LogIn')
+@section('title', 'Registration')
 
 @section('contents')
 
@@ -74,9 +74,6 @@
           <div class="columns small-12 medium-4">
             <input type="submit" name="submit" value="Create an account">
           </div>
-          <div class="columns small-12 forgot-password">
-            <a href="#">Forgotten your password?</a>
-          </div>
         </div>
       </form>
     </div>
@@ -89,7 +86,7 @@
   </div>
 </div>
 
-<div class="" style="width: 100%; border-bottom: 1px solid #ccc;"></div>
+<div class="" style="width: 40%; margin: auto; border-bottom: 1px solid #ccc;"></div>
 
 <div class="row align-center download-apps">
   <div class="columns small-12">

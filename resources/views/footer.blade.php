@@ -2,7 +2,7 @@
   <div class="row footer-links-section">
     <div class="small-12 medium-4 columns">
       <ul class="footer-brand">
-        <li><a href="/"><img src="img/logo.png" alt="logo" /></a><span class="brand"><a href="/">Login Services</a></span></li>
+        <li><a href="/"><img src="img/logo.png" alt="logo" /></a><span class="brand"><a href="/">LogIn Services</a></span></li>
         <li><p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dit anim id est laborum.
         </p></li>
