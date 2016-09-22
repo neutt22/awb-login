@@ -7,19 +7,19 @@
       <div class="sort-cell">
         <span>Sort by: </span>
         <div>
-          <span>Relevance</span>
+          <span><a href="#">Relevance</a></span>
           <ul>
-            <li>Location</li>
-            <li>Price: High to Low</li>
-            <li>Price: Low to High</li>
-            <li>Rating: High to Low</li>
-            <li>Discount</li>
-            <li>Delivery Time</li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Price: High to Low</a></li>
+            <li><a href="#">Price: Low to High</a></li>
+            <li><a href="#">Rating: High to Low</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Delivery Time</a></li>
           </ul>
         </div>
       </div>
     </div>
-    
+
   </div>
 </div>
 <div class="row">
