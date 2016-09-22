@@ -14,7 +14,7 @@
               <input type="text" name="q" placeholder="Enter part number...">
             </div>
             <div class="columns small-12 medium-3 large-2">
-              <button type="submit"><img src="img/arrow-right.png" alt="" /></button>
+              <button type="submit"><img src="img/search.png" alt="" /></button>
             </div>
           </div>
         </form>
