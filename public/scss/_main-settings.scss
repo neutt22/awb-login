@@ -4,6 +4,8 @@ $body-bg-color: transparent; // rgb(236, 240, 241);
 
 $form-bg-color: rgba(255,255,255,.80);
 $form-label-color: #696969;
+$main-text-color: #484848;
+$sub-text-color: #717171;
 
 // White triangle serves as form style
 @mixin triangle {
@@ -28,6 +30,7 @@ $form-label-color: #696969;
   bottom: 0;
   width: 100%;
   z-index: -1;
+  opacity: .16;
 }
 
 // Blue border-bottom line on every form

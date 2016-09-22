@@ -1,4 +1,28 @@
 <div class="row">
+  <div class="columns small-6 medium-9 product-header">
+    <h1>Products</h1>
+  </div>
+  <div class="columns small-6 medium-3">
+    <div class="sort-container">
+      <div class="sort-cell">
+        <span>Sort by: </span>
+        <div>
+          <span>Relevance</span>
+          <ul>
+            <li>Location</li>
+            <li>Price: High to Low</li>
+            <li>Price: Low to High</li>
+            <li>Rating: High to Low</li>
+            <li>Discount</li>
+            <li>Delivery Time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div class="row">
 
   <div class="columns small-6 medium-4 large-3">
     <div class="item-container">
@@ -785,4 +809,12 @@
     </div>
   </div>
 
+</div>
+<div class="row align-center">
+  <div class="columns small-12 medium-4 large-3">
+    <div class="load-more">
+      <div></div>
+      <button type="button" id="load-more">LOAD MORE</button>
+    </div>
+  </div>
 </div>
