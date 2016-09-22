@@ -66,3 +66,29 @@ $form-label-color: #696969;
     background-color: darken($accent, 10%) !important;
   }
 }
+
+// Scroll to top style
+@mixin scroll-to-top {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  text-align: center;
+  background: $accent;
+  color: whitesmoke;
+  text-decoration: none;
+  position: fixed;
+  bottom: 75px;
+  right: 40px;
+  background-image: url('../img/arrow-up.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  z-index: 999;
+  @include border-radius(50%);
+
+  @include breakpoint(small only){
+    bottom: 20px;
+    right: 20px;
+  }
+}

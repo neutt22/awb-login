@@ -24,6 +24,8 @@
 
         @include('menu-bar')
 
+        <a href="#" class="scroll-top"></a>
+
         @yield('contents')
 
         @include('footer')
