@@ -2,6 +2,7 @@
   <nav class="row menu">
     <div class="columns small-12 medium-5 large-7 logo">
       <a href="/"><img src="img/logo.png" alt="logo" /></a>
+      <!-- <input type="text" name="q" placeholder="Enter part number..."> -->
     </div>
     <div class="columns small-4 medium-3 large-2 align-middle m-util get-support">
       <div>

@@ -59,21 +59,7 @@
 </div>
 
 
-<div class="row">
-  <div class="columns small-6 medium-3">
-    Item product tags
-  </div>
-  <div class="columns small-6 medium-3">
-    Item product tags
-  </div>
-  <div class="columns small-6 medium-3">
-    Item product tags
-  </div>
-  <div class="columns small-6 medium-3">
-    Item product tags
-  </div>
-
-</div>
+@include('home-products')
 
 @endsection
 
