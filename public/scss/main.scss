@@ -5,6 +5,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: $body-bg-color;
+
+    .scroll-top {
+      @include scroll-to-top;
+    }
 }
 
 /* MENU BAR ==============================================================*/
