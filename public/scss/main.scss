@@ -248,16 +248,76 @@ $menu-sub-highlight: #bdc3c7;
       background-color: #333;
   }
 
+  // New searchbar style
   .search-container {
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 20px;
+    @include border-radius(10px);
+
+    .search-form {
+      position: relative;
+      // background-color: white;
+      height: 75px;
+      @include border-radius(10px);
+
+      span {
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/search.png');
+        background-size: cover;
+      }
+
+      input[type='text'] {
+        font-size: 30px;
+        height: 100%;
+        float: left;
+        width: 100%;
+        padding-left: 70px;
+        outline: none;
+        border: none;
+        @include border-radius(10px);
+      }
+
+      input[type='submit'] {
+        position: absolute;
+        color: whitesmoke;
+        width: 150px;
+        font-size: 25px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 75px;
+        border: none;
+        outline: none;
+        border-top: 2px solid #79a5de;
+        border-bottom: 1px solid #c1d1e4;
+        @include border-top-right-radius(10px);
+        @include border-bottom-right-radius(10px);
+        @include background-image(linear-gradient(#4183d7, #1f5faf));
+        opacity: 1;
+        transition: all .35s;
+
+        &:hover {
+          @include background-image(linear-gradient(#4a8bde, #1f5faf));
+        }
+      }
+    }
+
+  }
+
+  .search-container-backup {
       border: 2px solid $accent;
       background-color: white;
       margin-top: 200px;
       @include transition(all .15s);
 
       form div div {
-        &:first-child {
-
-        }
 
         &:last-child {
 

@@ -8,15 +8,10 @@
   <div class="row align-center">
     <div class="columns small-12 medium-10 large-8">
       <div class="search-container">
-        <form class="" action="index.html" method="post">
-          <div class="row">
-            <div class="columns small-12 medium-9 large-10">
-              <input type="text" name="q" placeholder="Enter part number...">
-            </div>
-            <div class="columns small-12 medium-3 large-2">
-              <button type="submit"><img src="img/search.png" alt="" /></button>
-            </div>
-          </div>
+        <form class="search-form" action="index.html" method="post">
+            <span></span>
+            <input type="text" name="q" placeholder="Enter part number...">
+          <input type="submit" value="Search">
         </form>
       </div>
     </div>
