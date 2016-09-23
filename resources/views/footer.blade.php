@@ -30,6 +30,25 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="columns small-6 medium-3">
+      <div class="payment-options">
+        <span>Payment Options</span>
+        <a href="#"><img src="img/payment-options.png" alt="payment options" /></a>
+      </div>
+    </div>
+    <div class="columns small-6 medium-3">
+      <div class="delivery-services">
+        <span>Delivery Services</span>
+        <br>
+        <a href="#"><img src="img/fedex.png" alt="fedex" /></a>
+        <a href="#"><img src="img/ups.png" alt="ups" /></a>
+      </div>
+    </div>
+    <div class="columns small-3">
+      <span>USD / EN</span>
+    </div>
+  </div>
   <div class="" style="width: 100%; border-bottom: 1px solid #ccc;"></div>
   <div class="row copyright">
     <div class="small-12 medium-6 small-order-2 medium-order-1 columns">
