@@ -40,4 +40,18 @@ $(document).ready(function () {
     $('html, body').animate({scrollTop: 0}, 800);
   });
 
+  // Prevent negative numbers on qty column of cart page
+
+  // Select your input element.
+  var number = document.getElementById('qty');
+
+  // Listen for input event on numInput.
+  number.onkeydown = function(e) {
+      if(!((e.keyCode > 95 && e.keyCode < 106)
+        || (e.keyCode > 47 && e.keyCode < 58)
+        || e.keyCode == 8)) {
+          return false;
+      }
+  }
+
 });

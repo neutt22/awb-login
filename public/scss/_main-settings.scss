@@ -62,7 +62,7 @@ $sub-text-color: #717171;
 // Default button style
 @mixin button-default {
   background-color: $accent !important;
-  color: white;
+  color: whitesmoke;
   transition: all .25s;
 
   &:hover {
@@ -94,4 +94,11 @@ $sub-text-color: #717171;
     bottom: 20px;
     right: 20px;
   }
+}
+
+// Default page title
+@mixin title-default {
+  color: $main-text-color;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  margin-bottom: 10px;
 }
