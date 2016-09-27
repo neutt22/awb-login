@@ -1198,11 +1198,11 @@ footer .copyright div:first-child {
 }
 
 /* CART CONTAINER ============================================================*/
-/* line 1000, ../scss/main.scss */
+/* line 1002, ../scss/main.scss */
 .cart-header {
   margin-top: 130px;
 }
-/* line 1003, ../scss/main.scss */
+/* line 1005, ../scss/main.scss */
 .cart-header .cart-bg {
   position: fixed;
   background-image: url("../img/slide/slide-3.jpg");
@@ -1215,7 +1215,7 @@ footer .copyright div:first-child {
   z-index: -1;
   opacity: .16;
 }
-/* line 1007, ../scss/main.scss */
+/* line 1009, ../scss/main.scss */
 .cart-header h1 {
   color: #484848;
   font-family: 'Montserrat', 'Roboto', sans-serif;
@@ -1223,7 +1223,7 @@ footer .copyright div:first-child {
   margin-bottom: 40px;
 }
 
-/* line 1013, ../scss/main.scss */
+/* line 1015, ../scss/main.scss */
 .cart-container {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 30px 30px 30px;
@@ -1236,7 +1236,7 @@ footer .copyright div:first-child {
   -webkit-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-/* line 1019, ../scss/main.scss */
+/* line 1021, ../scss/main.scss */
 .cart-container .cart-arrow {
   top: -30px;
   position: relative;
@@ -1248,31 +1248,35 @@ footer .copyright div:first-child {
   border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
   left: -530px;
 }
-/* line 1024, ../scss/main.scss */
+/* line 1026, ../scss/main.scss */
 .cart-container table {
   width: 100%;
 }
-/* line 1027, ../scss/main.scss */
+/* line 1029, ../scss/main.scss */
 .cart-container table th {
   padding: 15px;
   border-bottom: 2px solid rgba(51, 51, 51, 0.3);
   text-align: left;
 }
-/* line 1032, ../scss/main.scss */
+/* line 1034, ../scss/main.scss */
 .cart-container table th:last-child {
   width: 35px;
 }
-/* line 1037, ../scss/main.scss */
+/* line 1041, ../scss/main.scss */
+.cart-container table tr:nth-child(even) {
+  background-color: rgba(149, 149, 149, 0.05);
+}
+/* line 1046, ../scss/main.scss */
 .cart-container table td {
   padding: 10px;
 }
-/* line 1041, ../scss/main.scss */
+/* line 1050, ../scss/main.scss */
 .cart-container table .co-col img {
   width: 95px;
   display: inline-block;
   margin-right: 20px;
 }
-/* line 1049, ../scss/main.scss */
+/* line 1058, ../scss/main.scss */
 .cart-container table .qty input {
   outline: none;
   border: 1px solid #cfcfcf;
@@ -1286,7 +1290,7 @@ footer .copyright div:first-child {
   transition: all .25s;
   width: 50px;
 }
-/* line 1053, ../scss/main.scss */
+/* line 1062, ../scss/main.scss */
 .cart-container table .qty input:focus {
   border-color: #4183d7;
   background-color: #eaf1fa;
@@ -1294,18 +1298,18 @@ footer .copyright div:first-child {
   -webkit-box-shadow: 0 0 10px rgba(65, 131, 215, 0.5);
   box-shadow: 0 0 10px rgba(65, 131, 215, 0.5);
 }
-/* line 1063, ../scss/main.scss */
+/* line 1072, ../scss/main.scss */
 .cart-container table .item-delete img:hover {
   -webkit-filter: brightness(120%);
   filter: brightness(120%);
 }
 
 /* CHECKOUT CONTAINER ============================================================*/
-/* line 1073, ../scss/main.scss */
+/* line 1082, ../scss/main.scss */
 .checkout-header {
   margin-top: 50px;
 }
-/* line 1076, ../scss/main.scss */
+/* line 1085, ../scss/main.scss */
 .checkout-header h1 {
   color: #484848;
   font-family: 'Montserrat', 'Roboto', sans-serif;
@@ -1313,7 +1317,7 @@ footer .copyright div:first-child {
   margin-bottom: 40px;
 }
 
-/* line 1082, ../scss/main.scss */
+/* line 1091, ../scss/main.scss */
 .checkout-container {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 30px 30px 30px;
@@ -1326,7 +1330,7 @@ footer .copyright div:first-child {
   -webkit-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-/* line 1088, ../scss/main.scss */
+/* line 1097, ../scss/main.scss */
 .checkout-container .checkout-arrow {
   top: -30px;
   position: relative;
@@ -1338,29 +1342,29 @@ footer .copyright div:first-child {
   border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
   left: -530px;
 }
-/* line 1093, ../scss/main.scss */
+/* line 1102, ../scss/main.scss */
 .checkout-container .sub-total, .checkout-container .shipping {
   padding-top: 40px;
   border-bottom: 1px dotted rgba(51, 51, 51, 0.3);
 }
-/* line 1097, ../scss/main.scss */
+/* line 1106, ../scss/main.scss */
 .checkout-container .sub-total .row .columns:last-child, .checkout-container .shipping .row .columns:last-child {
   text-align: right;
 }
-/* line 1102, ../scss/main.scss */
+/* line 1111, ../scss/main.scss */
 .checkout-container .total {
   margin-top: 60px;
   border-top: 2px solid rgba(51, 51, 51, 0.3);
 }
-/* line 1106, ../scss/main.scss */
+/* line 1115, ../scss/main.scss */
 .checkout-container .total .row .columns:last-child {
   text-align: right;
 }
-/* line 1111, ../scss/main.scss */
+/* line 1120, ../scss/main.scss */
 .checkout-container .checkout {
   margin-top: 30px;
 }
-/* line 1114, ../scss/main.scss */
+/* line 1123, ../scss/main.scss */
 .checkout-container .checkout input {
   width: 100%;
   outline: none;
@@ -1374,16 +1378,16 @@ footer .copyright div:first-child {
 .checkout-container .checkout input:hover {
   background-color: #286abd !important;
 }
-/* line 1123, ../scss/main.scss */
+/* line 1132, ../scss/main.scss */
 .checkout-container .order-notice {
   text-align: right;
 }
-/* line 1126, ../scss/main.scss */
+/* line 1135, ../scss/main.scss */
 .checkout-container .order-notice span {
   color: #646464;
   font-size: 11px;
 }
-/* line 1130, ../scss/main.scss */
+/* line 1139, ../scss/main.scss */
 .checkout-container .order-notice span a {
   color: #4183d7;
   text-decoration: none;

@@ -26,17 +26,17 @@
         </tr>
         @for($i = 0; $i < 5; $i++)
           <tr>
-            <td class="co-col">
+            <td data-th="PRODUCT" class="co-col">
               <img src="http://lorempixel.com/200/20{{ $i }}/" alt="" />
               <div style="display: inline-block">
                 <span>COMPANY BRAND NAME</span><br>
                 <span>Description content</span>
               </div>
             </td>
-            <td>${{ 150 + ($i * 2)}}.20</td>
-            <td class="qty"><input type="number" min="1" id="qty" name="qty" required value="1"></td>
-            <td>$599.40</td>
-            <td class="item-delete"><a href="#"><img src="img/close.png" alt="close" /></a></td>
+            <td data-th="PRICE" >${{ 150 + ($i * 2)}}.20</td>
+            <td data-th="QUANTITY" class="qty"><input type="number" min="1" id="qty" name="qty" required value="1"></td>
+            <td data-th="TOTAL" >$599.40</td>
+            <td data-th="DELETE" class="item-delete"><a href="#"><img src="img/close.png" alt="close" /></a></td>
           </tr>
         @endfor
 
@@ -88,14 +88,14 @@
       </div>
       <div class="checkout">
         <div class="row align-right">
-          <div class="columns small-4">
+          <div class="columns small-6 medium-4">
             <input type="submit" name="name" value="PROCEED TO CHECKOUT">
           </div>
         </div>
       </div>
       <div class="order-notice">
         <div class="row align-right">
-          <div class="columns small-5">
+          <div class="columns small-12 medium-5">
             <span>
               By placing your order, you agree to LogIn's <a href="#">privacy notice</a> and <a href="#">conditions of use</a>.
             </span>

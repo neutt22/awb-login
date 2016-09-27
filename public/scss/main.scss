@@ -997,6 +997,8 @@ $field-bg: #f5f5f5;
 
 /* CART CONTAINER ============================================================*/
 
+$breakpoint-mobile-table: 480px;
+
 .cart-header {
   margin-top: 130px;
 
@@ -1031,6 +1033,13 @@ $field-bg: #f5f5f5;
 
       &:last-child {
         width: 35px;
+      }
+    }
+
+    tr {
+
+      &:nth-child(even) {
+        background-color: rgba(149, 149, 149, .05);
       }
     }
 
