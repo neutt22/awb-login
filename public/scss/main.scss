@@ -40,7 +40,7 @@ $menu-sub-highlight: #bdc3c7;
 
 .m-util {
   @include breakpoint(small only){
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -72,7 +72,7 @@ $menu-sub-highlight: #bdc3c7;
 .logo img {
   text-align: center;
   width: 100px;
-  transition: filter .3s;
+  transition: all .3s;
 
   @include breakpoint(medium down){
     width: 75px;
@@ -251,7 +251,7 @@ $menu-sub-highlight: #bdc3c7;
   // New searchbar style
   .search-container {
     margin-top: 200px;
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: rgba(255, 255, 255, 0.44);
     padding: 20px;
     @include border-radius(10px);
 
