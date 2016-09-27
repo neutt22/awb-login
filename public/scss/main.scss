@@ -712,9 +712,7 @@ $field-bg: #f5f5f5;
     text-align: center;
 
     h1 {
-      color: $main-text-color;
-      font-family: 'Montserrat', 'Roboto', sans-serif;
-      margin-bottom: 10px;
+      @include title-default;
     }
 
     p {
@@ -994,5 +992,145 @@ $field-bg: #f5f5f5;
     height: 100%;
     padding: 10px;
     outline: none;
+  }
+}
+
+/* CART CONTAINER ============================================================*/
+
+.cart-header {
+  margin-top: 130px;
+
+  .cart-bg {
+    @include fixed-bg-image('../img/slide/slide-3.jpg');
+  }
+
+  h1 {
+    @include title-default;
+    margin-bottom: 40px;
+  }
+}
+
+.cart-container {
+  background-color: $form-bg-color;
+  padding: 10px 30px 30px 30px;
+  margin-bottom: 40px;
+  @include form-accent;
+
+  .cart-arrow {
+    @include triangle;
+    left: -530px;
+  }
+
+  table {
+    width: 100%;
+
+    th {
+      padding: 15px;
+      border-bottom: 2px solid rgba(51, 51, 51, .3);
+      text-align: left;
+
+      &:last-child {
+        width: 35px;
+      }
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .co-col img {
+      width: 95px;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .qty {
+
+      input {
+        @include input-default;
+        width: 50px;
+
+        &:focus {
+          @include input-focus;
+        }
+      }
+    }
+
+    .item-delete {
+
+      img {
+
+        &:hover {
+          @include filter(brightness(120%));
+        }
+      }
+    }
+  }
+}
+
+/* CHECKOUT CONTAINER ============================================================*/
+
+.checkout-header {
+  margin-top: 50px;
+
+  h1 {
+    @include title-default;
+    margin-bottom: 40px;
+  }
+}
+
+.checkout-container {
+  background-color: $form-bg-color;
+  padding: 10px 30px 30px 30px;
+  margin-bottom: 40px;
+  @include form-accent;
+
+  .checkout-arrow {
+    @include triangle;
+    left: -530px;
+  }
+
+  .sub-total, .shipping {
+    padding-top: 40px;
+    border-bottom: 1px dotted rgba(51, 51, 51, .3);
+
+    .row .columns:last-child {
+      text-align: right;
+    }
+  }
+
+  .total {
+    margin-top: 60px;
+    border-top: 2px solid rgba(51, 51, 51, .3);
+
+    .row .columns:last-child {
+      text-align: right;
+    }
+  }
+
+  .checkout {
+    margin-top: 30px;
+
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 10px;
+      @include button-default;
+    }
+  }
+
+  .order-notice {
+    text-align: right;
+
+    span {
+      color: #646464;
+      font-size: 11px;
+
+      a {
+        color: $accent;
+        text-decoration: none;
+      }
+    }
   }
 }

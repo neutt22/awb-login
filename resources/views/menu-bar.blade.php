@@ -19,7 +19,7 @@
       <span><a href="/login">Login</a> / <a href="/register">Register</a></span>
     </div>
     <div class="columns small-4 medium-1 large-1 align-middle m-util my-cart">
-      <a href="#"><img src="img/cart.png" alt="cart" /><span class="cart-notif">3</span></a>
+      <a href="/cart"><img src="img/cart.png" alt="cart" /><span class="cart-notif">3</span></a>
     </div>
   </nav>
 </div>
