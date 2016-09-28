@@ -1009,6 +1009,11 @@ $breakpoint-mobile-table: 480px;
   h1 {
     @include title-default;
     margin-bottom: 40px;
+
+    @include breakpoint(small only){
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -1018,9 +1023,19 @@ $breakpoint-mobile-table: 480px;
   margin-bottom: 40px;
   @include form-accent;
 
+  @include breakpoint(small only){
+    padding: 0;
+    font-size: 11px;
+  }
+
   .cart-arrow {
     @include triangle;
     left: -530px;
+
+    @include breakpoint(small only){
+      top: -20px;
+      left: -150px;
+    }
   }
 
   table {
@@ -1051,6 +1066,10 @@ $breakpoint-mobile-table: 480px;
       width: 95px;
       display: inline-block;
       margin-right: 20px;
+
+      @include breakpoint(small only){
+        width: 50px;
+      }
     }
 
     .qty {
@@ -1085,6 +1104,11 @@ $breakpoint-mobile-table: 480px;
   h1 {
     @include title-default;
     margin-bottom: 40px;
+
+    @include breakpoint(small only){
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -1097,6 +1121,10 @@ $breakpoint-mobile-table: 480px;
   .checkout-arrow {
     @include triangle;
     left: -530px;
+
+    @include breakpoint(small only){
+      left: -150px;
+    }
   }
 
   .sub-total, .shipping {
