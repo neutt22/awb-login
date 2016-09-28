@@ -88,14 +88,14 @@
       </div>
       <div class="checkout">
         <div class="row align-right">
-          <div class="columns small-6 medium-4">
+          <div class="columns small-12 medium-4">
             <input type="submit" name="name" value="PROCEED TO CHECKOUT">
           </div>
         </div>
       </div>
       <div class="order-notice">
         <div class="row align-right">
-          <div class="columns small-12 medium-5">
+          <div class="columns small-12">
             <span>
               By placing your order, you agree to LogIn's <a href="#">privacy notice</a> and <a href="#">conditions of use</a>.
             </span>
