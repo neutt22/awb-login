@@ -1266,7 +1266,7 @@ footer .copyright div:first-child {
   /* line 1031, ../scss/main.scss */
   .cart-container .cart-arrow {
     top: -20px;
-    left: -150px;
+    left: -120px;
   }
 }
 /* line 1041, ../scss/main.scss */
@@ -1379,7 +1379,7 @@ footer .copyright div:first-child {
 @media screen and (max-width: 39.9375em) {
   /* line 1121, ../scss/main.scss */
   .checkout-container .checkout-arrow {
-    left: -150px;
+    left: -120px;
   }
 }
 /* line 1130, ../scss/main.scss */

@@ -1034,7 +1034,7 @@ $breakpoint-mobile-table: 480px;
 
     @include breakpoint(small only){
       top: -20px;
-      left: -150px;
+      left: -120px;
     }
   }
 
@@ -1123,7 +1123,7 @@ $breakpoint-mobile-table: 480px;
     left: -530px;
 
     @include breakpoint(small only){
-      left: -150px;
+      left: -120px;
     }
   }
 
