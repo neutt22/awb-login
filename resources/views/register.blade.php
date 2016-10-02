@@ -59,6 +59,9 @@
               <div class="columns small-12">
                 <input type="repassword" name="repassword" placeholder="Re-password">
               </div>
+              <div class="columns small-12">
+                {!! app('captcha')->display(); !!}
+              </div>
             </div>
           </div>
           <div class="columns small-12 medium-6">

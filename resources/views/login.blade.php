@@ -34,6 +34,11 @@
         </div>
         <div class="row">
           <div class="columns small-12">
+            {!! app('captcha')->display(); !!}
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns small-12">
             <input type="submit" value="Sign In">
           </div>
         </div>
