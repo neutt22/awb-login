@@ -601,10 +601,13 @@ $field-bg: #f5f5f5;
 
 .form-container {
     background-color: $form-bg-color;
-    padding: 10px 30px;
-    padding-bottom: 30px;
+    padding: 10px 30px 30px 30px;
     margin-bottom: 40px;
     @include form-accent;
+
+    @include breakpoint(small only){
+      padding: 10px;
+    }
 
     label {
       cursor: pointer;
