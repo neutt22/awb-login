@@ -33,23 +33,29 @@
     </div>
     <div class="small-12 medium-3 columns">
       <div class="social-feeds-section">
-        social feeds section
+
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="columns small-6 medium-3">
-      <div class="payment-options">
-        <span>Payment Options</span>
-        <a href="#"><img src="img/payment-options.png" alt="payment options" /></a>
+    <div class="columns small-12 medium-4 large-3">
+      <div class="row align-center">
+        <div class="columns small-7 medium-12">
+          <div class="payment-options">
+            <span>Payment Options</span>
+            <a href="#"><img src="img/payment-options.png" alt="payment options" /></a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="columns small-6 medium-3">
+    <div class="columns small-12 medium-8 large-5">
       <div class="delivery-services">
         <span>Delivery Services</span>
         <br>
-        <a href="#"><img src="img/fedex.png" alt="fedex" /></a>
-        <a href="#"><img src="img/ups.png" alt="ups" /></a>
+        <a href="http://www.fedex.com/us/"><img src="img/fedex.png" alt="fedex" /></a>
+        <a href="https://www.ups.com/"><img src="img/ups.png" alt="ups" /></a>
+        <a href="https://www.usps.com/"><img src="img/usps.png" alt="usps" /></a>
+        <a href="http://www.dhl.com/en.html"><img src="img/dhl.png" alt="dhl" /></a>
       </div>
     </div>
   </div>
