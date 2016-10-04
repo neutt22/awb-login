@@ -102,3 +102,11 @@ $sub-text-color: #717171;
   font-family: 'Montserrat', 'Roboto', sans-serif;
   margin-bottom: 10px;
 }
+
+// Well blue
+@mixin well-blue {
+  background-color: #cfe3fc;
+  border: 1px solid $accent;
+  color: $accent;
+  padding: 25px;
+}

@@ -12,6 +12,13 @@
     </div>
   </div>
 </div>
+<div class="row">
+  <div class="columns small-12">
+    <div class="continue-shopping">
+      <a href="/">Continue Shopping</a>
+    </div>
+  </div>
+</div>
 <div class="row align-center">
   <div class="columns small-12">
     <div class="cart-container">
@@ -28,9 +35,11 @@
           <tr>
             <td data-th="PRODUCT" class="co-col">
               <img src="http://lorempixel.com/200/20{{ $i }}/" alt="" />
-              <div style="display: inline-block">
-                <span>COMPANY BRAND NAME</span><br>
-                <span>Description content</span>
+              <div style="display: inline-block; vertical-align: middle;">
+                <span><strong>COMPANY BRAND NAME</strong></span><br>
+                <span><strong>MS21921-8</strong></span><br>
+                <span style="font-size: 12px;">CIRCUIT BREAKER</span><br>
+                <span style="font-size: 12px;">NEW SURPLUS</span><br>
               </div>
             </td>
             <td data-th="PRICE" >${{ 150 + ($i * 2)}}.20</td>
@@ -46,62 +55,31 @@
 </div>
 
 <div class="row">
-  <div class="columns small-12">
-    <div class="checkout-header">
-      <h1>Checkout</h1>
+  <div class="columns small-12 medium-4 small-order-3">
+    <div class="payment-methods">
+      <h1>PAYMENT METHODS</h1>
+      <a href="#"><img src="img/payment-options-colored.png" alt="payment options" /></a>
     </div>
   </div>
-</div>
-<div class="row align-center">
-  <div class="columns small-12">
-    <div class="checkout-container">
-      <div class="checkout-arrow"></div>
-      <div class="sub-total">
-        <div class="row">
-          <div class="columns small-6">
-            <span>SUBTOTAL</span>
-          </div>
-          <div class="columns small-6">
-            <span>$1243.56</span>
-          </div>
-        </div>
-      </div>
-      <div class="shipping">
-        <div class="row">
-          <div class="columns small-6">
-            <span>SHIPPING</span>
-          </div>
-          <div class="columns small-6">
-            <span><i>Free shipping</i></span>
-          </div>
-        </div>
-      </div>
-      <div class="total">
-        <div class="row">
-          <div class="columns small-6">
-            <span><strong>TOTAL</strong></span>
-          </div>
-          <div class="columns small-6">
-            <span><strong>$1234.56</strong></span>
-          </div>
-        </div>
-      </div>
-      <div class="checkout">
-        <div class="row align-right">
-          <div class="columns small-12 medium-4">
-            <input type="submit" name="name" value="PROCEED TO CHECKOUT">
-          </div>
-        </div>
-      </div>
-      <div class="order-notice">
-        <div class="row align-right">
-          <div class="columns small-12">
-            <span>
-              By placing your order, you agree to LogIn's <a href="#">privacy notice</a> and <a href="#">conditions of use</a>.
-            </span>
-          </div>
-        </div>
-      </div>
+  <div class="columns small-12 medium-4 small-order-2">
+    <div class="need-assistance">
+      <h1>NEED ASSISTANCE?</h1>
+      <p>
+        If you have any inquiries or need further
+        assistance, please <strong><a href="/contact-us">Contact Us</a></strong>.
+      </p>
+    </div>
+  </div>
+  <div class="columns small-12 medium-4 small-order-1">
+    <div class="sub-total">
+      <form class="" action="index.html" method="post">
+        <span>SUBTOTAL</span>
+        <span>$1,849.50</span>
+        <input type="button" name="name" value="PROCEED TO CHECKOUT">
+      </form>
+    </div>
+    <div class="checkout-notice">
+      <span>By placing your order, you agree to LogIn's <a href="/privacy-policy">privacy notice</a> and <a href="/terms-conditions">conditions of use</a>.</span>
     </div>
   </div>
 </div>
