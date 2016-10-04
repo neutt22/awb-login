@@ -1,14 +1,22 @@
 <footer class="footer">
   <div class="row footer-links-section">
-    <div class="small-12 medium-4 columns">
+    <div class="small-12 medium-3 columns">
       <ul class="footer-brand">
         <li><a href="/"><img src="img/logo.png" alt="logo" /></a><span class="brand"><a href="/">LogIn Services</a></span></li>
         <li><p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
         </p></li>
       </ul>
     </div>
-    <div class="small-6 medium-3 columns">
+    <div class="small-6 medium-2 columns">
+      <ul>
+        <li><a href="#">Other Services</a></li>
+        <li><a href="#">Shipping and Delivery</a></li>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="small-6 medium-2 columns">
       <ul>
         <li><a href="#">Return Policy</a></li>
         <li><a href="/privacy-policy">Privacy Policy</a></li>
@@ -16,15 +24,14 @@
         <li><a href="#">Site Map</a></li>
       </ul>
     </div>
-    <div class="small-6 medium-3 columns">
+    <div class="small-6 medium-2 columns">
       <ul>
-        <li><a href="#">Order Status</a></li>
-        <li><a href="#">Shipping and Delivery</a></li>
-        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Events</a></li>
         <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
       </ul>
     </div>
-    <div class="small-12 medium-2 columns">
+    <div class="small-12 medium-3 columns">
       <div class="social-feeds-section">
         social feeds section
       </div>
@@ -44,9 +51,6 @@
         <a href="#"><img src="img/fedex.png" alt="fedex" /></a>
         <a href="#"><img src="img/ups.png" alt="ups" /></a>
       </div>
-    </div>
-    <div class="columns small-3">
-      <span>USD / EN</span>
     </div>
   </div>
   <div class="" style="width: 100%; border-bottom: 1px solid #ccc;"></div>
