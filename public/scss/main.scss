@@ -1175,3 +1175,29 @@ $breakpoint-mobile-table: 480px;
     }
   }
 }
+
+/* TERMS & CONDITIONS / PRIVACY POLICY CONTAINER ============================================================*/
+
+.terms-conditions-container, .privacy-policy {
+  margin-top: 130px;
+
+  .columns {
+    border-left: 1px solid $accent;
+    margin-bottom: 40px;
+  }
+
+  h1, h3 {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    color: $main-text-color;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  p {
+    color: $sub-text-color;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

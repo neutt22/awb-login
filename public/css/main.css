@@ -1438,3 +1438,29 @@ footer .copyright div:first-child {
   color: #4183d7;
   text-decoration: none;
 }
+
+/* TERMS & CONDITIONS / PRIVACY POLICY CONTAINER ============================================================*/
+/* line 1181, ../scss/main.scss */
+.terms-conditions-container, .privacy-policy {
+  margin-top: 130px;
+}
+/* line 1184, ../scss/main.scss */
+.terms-conditions-container .columns, .privacy-policy .columns {
+  border-left: 1px solid #4183d7;
+  margin-bottom: 40px;
+}
+/* line 1189, ../scss/main.scss */
+.terms-conditions-container h1, .terms-conditions-container h3, .privacy-policy h1, .privacy-policy h3 {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  color: #484848;
+}
+/* line 1194, ../scss/main.scss */
+.terms-conditions-container h1, .privacy-policy h1 {
+  margin-top: 0;
+}
+/* line 1198, ../scss/main.scss */
+.terms-conditions-container p, .privacy-policy p {
+  color: #717171;
+  font-size: 12px;
+  line-height: 20px;
+}

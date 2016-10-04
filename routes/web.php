@@ -26,3 +26,11 @@ Route::get('/login', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
+
+Route::get('/terms-conditions', function () {
+    return view('terms-conditions');
+});
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+});

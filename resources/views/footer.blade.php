@@ -11,8 +11,8 @@
     <div class="small-6 medium-3 columns">
       <ul>
         <li><a href="#">Return Policy</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-conditions">Terms and Conditions</a></li>
         <li><a href="#">Site Map</a></li>
       </ul>
     </div>
