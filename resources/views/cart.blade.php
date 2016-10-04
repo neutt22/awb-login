@@ -55,13 +55,13 @@
 </div>
 
 <div class="row">
-  <div class="columns small-12 medium-4 small-order-3">
+  <div class="columns small-12 medium-4 small-order-3 medium-order-1">
     <div class="payment-methods">
       <h1>PAYMENT METHODS</h1>
       <a href="#"><img src="img/payment-options-colored.png" alt="payment options" /></a>
     </div>
   </div>
-  <div class="columns small-12 medium-4 small-order-2">
+  <div class="columns small-12 medium-4 small-order-2 medium-order-2">
     <div class="need-assistance">
       <h1>NEED ASSISTANCE?</h1>
       <p>
@@ -70,7 +70,7 @@
       </p>
     </div>
   </div>
-  <div class="columns small-12 medium-4 small-order-1">
+  <div class="columns small-12 medium-4 small-order-1 medium-order-3">
     <div class="sub-total">
       <form class="" action="index.html" method="post">
         <span>SUBTOTAL</span>
