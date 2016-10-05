@@ -13,7 +13,6 @@
         <li><a href="#">Other Services</a></li>
         <li><a href="#">Shipping and Delivery</a></li>
         <li><a href="#">Payment Options</a></li>
-        <li><a href="#">Contact Us</a></li>
       </ul>
     </div>
     <div class="small-6 medium-2 columns">
@@ -27,7 +26,7 @@
     <div class="small-6 medium-2 columns">
       <ul>
         <li><a href="#">Events</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="/contact-us">Contact Us</a></li>
         <li><a href="/about-us">About Us</a></li>
       </ul>
     </div>

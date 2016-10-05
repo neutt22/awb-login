@@ -1186,6 +1186,7 @@ footer .copyright div:first-child {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 30px 30px 30px;
   margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 5px solid #4183d7;
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1242,7 +1243,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 70, ../scss/_main-settings.scss */
+/* line 71, ../scss/_main-settings.scss */
 .form-container input[type='submit']:hover {
   background-color: #286abd !important;
 }
@@ -1352,6 +1353,7 @@ footer .copyright div:first-child {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 30px 30px 30px;
   margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 5px solid #4183d7;
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1406,7 +1408,7 @@ footer .copyright div:first-child {
   transition: all .25s;
   margin-top: 20px;
 }
-/* line 70, ../scss/_main-settings.scss */
+/* line 71, ../scss/_main-settings.scss */
 .login-container input[type='submit']:hover {
   background-color: #286abd !important;
 }
@@ -1725,6 +1727,7 @@ footer .copyright div:first-child {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 30px 30px 30px;
   margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 5px solid #4183d7;
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1874,6 +1877,7 @@ footer .copyright div:first-child {
 .sub-total {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 5px solid #4183d7;
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1931,7 +1935,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 70, ../scss/_main-settings.scss */
+/* line 71, ../scss/_main-settings.scss */
 .sub-total input:hover {
   background-color: #286abd !important;
 }
@@ -2060,25 +2064,128 @@ footer .copyright div:first-child {
   }
 }
 
-/* TERMS & CONDITIONS / PRIVACY POLICY CONTAINER ============================================================*/
+/* CONTACT US CONTAINER ============================================================*/
 /* line 1358, ../scss/main.scss */
-.terms-conditions-container, .privacy-policy {
+.contact-us-container {
   margin-top: 130px;
 }
 /* line 1361, ../scss/main.scss */
+.contact-us-container .contact-us-bg {
+  position: fixed;
+  background-image: url("../img/slide/slide-3.jpg");
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: .16;
+}
+/* line 1365, ../scss/main.scss */
+.contact-us-container .contact-form-sub-text {
+  margin-bottom: 40px;
+}
+/* line 1369, ../scss/main.scss */
+.contact-us-container h1 {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  color: #484848;
+}
+/* line 1374, ../scss/main.scss */
+.contact-us-container h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+/* line 1380, ../scss/main.scss */
+.contact-us-container p {
+  margin-top: 0;
+  font-size: 15px;
+}
+/* line 1385, ../scss/main.scss */
+.contact-us-container span {
+  font-size: 14px;
+}
+/* line 1389, ../scss/main.scss */
+.contact-us-container a {
+  color: #4183d7;
+  text-decoration: none;
+}
+/* line 1395, ../scss/main.scss */
+.contact-us-container .contact-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 5px solid #4183d7;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+}
+/* line 1400, ../scss/main.scss */
+.contact-us-container .contact-form .contact-us-arrow {
+  top: -30px;
+  position: relative;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 20px 25px;
+  border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
+}
+/* line 1406, ../scss/main.scss */
+.contact-us-container .contact-form form input, .contact-us-container .contact-form form textarea {
+  outline: none;
+  border: 1px solid #cfcfcf;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  margin: 5px 0;
+  background-color: #f5f5f5;
+  transition: all .25s;
+}
+/* line 1409, ../scss/main.scss */
+.contact-us-container .contact-form form input:focus, .contact-us-container .contact-form form textarea:focus {
+  border-color: #4183d7;
+  background-color: #eaf1fa;
+  -moz-box-shadow: 0 0 10px rgba(65, 131, 215, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(65, 131, 215, 0.5);
+  box-shadow: 0 0 10px rgba(65, 131, 215, 0.5);
+}
+/* line 1413, ../scss/main.scss */
+.contact-us-container .contact-form form input[type="submit"], .contact-us-container .contact-form form textarea[type="submit"] {
+  background-color: #4183d7 !important;
+  color: whitesmoke;
+  transition: all .25s;
+}
+/* line 71, ../scss/_main-settings.scss */
+.contact-us-container .contact-form form input[type="submit"]:hover, .contact-us-container .contact-form form textarea[type="submit"]:hover {
+  background-color: #286abd !important;
+}
+
+/* TERMS & CONDITIONS / PRIVACY POLICY CONTAINER ============================================================*/
+/* line 1423, ../scss/main.scss */
+.terms-conditions-container, .privacy-policy {
+  margin-top: 130px;
+}
+/* line 1426, ../scss/main.scss */
 .terms-conditions-container .columns, .privacy-policy .columns {
   border-left: 1px solid #4183d7;
 }
-/* line 1365, ../scss/main.scss */
+/* line 1430, ../scss/main.scss */
 .terms-conditions-container h1, .terms-conditions-container h3, .privacy-policy h1, .privacy-policy h3 {
   font-family: 'Montserrat', 'Roboto', sans-serif;
   color: #484848;
 }
-/* line 1370, ../scss/main.scss */
+/* line 1435, ../scss/main.scss */
 .terms-conditions-container h1, .privacy-policy h1 {
   margin-top: 0;
 }
-/* line 1374, ../scss/main.scss */
+/* line 1439, ../scss/main.scss */
 .terms-conditions-container p, .privacy-policy p {
   color: #717171;
   font-size: 12px;

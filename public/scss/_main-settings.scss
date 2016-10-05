@@ -22,7 +22,7 @@ $sub-text-color: #717171;
 }
 
 // Fixed full screen background image
-@mixin fixed-bg-image($image) {
+@mixin fixed-bg-image($image: '../img/slide/slide-3.jpg') {
   position: fixed;
   background-image: url($image);
   background-position: center;
@@ -37,6 +37,7 @@ $sub-text-color: #717171;
 
 // Blue border-bottom line on every form
 @mixin form-accent {
+  background-color: $form-bg-color;
   border-bottom: 5px solid $accent;
   @include border-top-left-radius(10px);
   @include border-top-right-radius(10px);

@@ -1353,6 +1353,71 @@ $breakpoint-mobile-table: 480px;
   }
 }
 
+/* CONTACT US CONTAINER ============================================================*/
+
+.contact-us-container {
+    margin-top: 130px;
+
+    .contact-us-bg {
+      @include fixed-bg-image;
+    }
+
+    .contact-form-sub-text {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+      color: $main-text-color;
+    }
+
+    h4 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+    }
+
+    p {
+      margin-top: 0;
+      font-size: 15px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    a {
+      color: $accent;
+      text-decoration: none;
+
+    }
+
+    .contact-form {
+      @include form-accent;
+      padding: 10px 20px;
+      margin-bottom: 40px;
+
+      .contact-us-arrow {
+        @include triangle;
+      }
+
+      form {
+
+        input, textarea {
+          @include input-default;
+
+          &:focus {
+            @include input-focus;
+          }
+
+          &[type="submit"] {
+            @include button-default;
+          }
+        }
+      }
+    }
+}
+
 /* TERMS & CONDITIONS / PRIVACY POLICY CONTAINER ============================================================*/
 
 .terms-conditions-container, .privacy-policy {
