@@ -1,3 +1,5 @@
+@import 'compass';
+
 $accent: #4183d7;
 $purple: #652c90;
 $body-bg-color: transparent; // rgb(236, 240, 241);
@@ -109,4 +111,109 @@ $sub-text-color: #717171;
   border: 1px solid $accent;
   color: $accent;
   padding: 25px;
+}
+
+// Keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// Animation
+@mixin animation ($stuff ) {
+    -webkit-animation: $stuff;
+    -moz-animation: $stuff;
+    -ms-animation: $stuff;
+    animation: $stuff;
+}
+
+// Jet animations
+@include keyframes(jet) {
+  0% {
+  	@include transform( translateY(0) );
+  }
+
+  30% {
+    @include transform( translateY(90px) );
+  }
+
+  45% {
+    @include transform( translateY(60px) );
+  }
+
+  50% {
+    @include transform( translateY(35px) );
+  }
+
+  70% {
+    @include transform( translateY(50px) );
+  }
+
+  80% {
+    @include transform( translateY(-10px) );
+  }
+
+  100% {
+    @include transform( translateY(0) );
+  }
+}
+
+// Cloud animations
+@include keyframes(cloud) {
+  0% {
+  	@include transform( translateX(-500px) );
+    @include opacity(0);
+  }
+
+  30% {
+    @include opacity(1);
+  }
+
+  50% {
+    @include opacity(1);
+  }
+
+  60% {
+    @include opacity(0);
+  }
+
+  100% {
+    @include opacity(0);
+    @include transform( translateX(180px) );
+  }
+}
+
+// Cloud animations
+@include keyframes(cloud-2) {
+  0% {
+  	@include transform( translateX(-200px) );
+    @include opacity(0);
+  }
+
+  30% {
+    @include opacity(1);
+  }
+
+  50% {
+    @include opacity(1);
+  }
+
+  60% {
+    @include opacity(0);
+  }
+
+  100% {
+    @include opacity(0);
+    @include transform( translateX(350px) );
+  }
 }

@@ -34,3 +34,7 @@ Route::get('/terms-conditions', function () {
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 });
+
+Route::get('/about-us', function () {
+    return view('about-us');
+});

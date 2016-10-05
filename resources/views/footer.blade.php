@@ -28,7 +28,7 @@
       <ul>
         <li><a href="#">Events</a></li>
         <li><a href="#">Contact Us</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="/about-us">About Us</a></li>
       </ul>
     </div>
     <div class="small-12 medium-3 columns">

@@ -1268,6 +1268,59 @@ $breakpoint-mobile-table: 480px;
 
 /* CHECKOUT CONTAINER ============================================================*/
 
+/* ABOUT US CONTAINER ============================================================*/
+
+.about-us {
+  margin-top: 130px;
+  position: relative;
+  overflow: hidden;
+
+  .jet {
+    width: 300px;
+    @include animation(jet 5s linear 0s infinite normal);
+  }
+
+  .cloud {
+    width: 115px;
+    @include animation(cloud 4s linear 0s infinite normal);
+  }
+
+  .cloud-2 {
+    width: 125px;
+    @include animation(cloud-2 5s linear 0s infinite normal);
+  }
+
+  h1 {
+    color: $main-text-color;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+  }
+
+  p {
+    color: $sub-text-color;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .founder-section {
+    margin: 60px 0 0 0;
+
+    .columns {
+      text-align: center;
+    }
+
+    .founder {
+      border: 2px solid $accent;
+      @include border-radius(50%);
+    }
+
+    .founder-name {
+      margin-top: 15px;
+      color: $accent;
+      cursor: pointer;
+    }
+  }
+}
 
 /* TERMS & CONDITIONS / PRIVACY POLICY CONTAINER ============================================================*/
 
