@@ -76,7 +76,7 @@
       </div>
       <div class="row">
         <div class="columns small-12">
-          <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+          <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
           <div style="overflow:hidden;height:400px;width:100%;position:relative">
             <div id="gmap_canvas" style="height:400px;width:100%;">
               <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
