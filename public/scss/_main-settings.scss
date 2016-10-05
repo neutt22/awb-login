@@ -183,8 +183,8 @@ $sub-text-color: #717171;
     @include opacity(1);
   }
 
-  60% {
-    @include opacity(0);
+  80% {
+    @include opacity(1);
   }
 
   100% {

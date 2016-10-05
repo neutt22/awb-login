@@ -191,9 +191,9 @@
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
-  60% {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
+  80% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   100% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -221,9 +221,9 @@
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
-  60% {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
+  80% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   100% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -251,9 +251,9 @@
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
-  60% {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
+  80% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   100% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -281,9 +281,9 @@
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
-  60% {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
+  80% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   100% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -1964,86 +1964,121 @@ footer .copyright div:first-child {
 /* line 1273, ../scss/main.scss */
 .about-us {
   margin-top: 130px;
+}
+/* line 1276, ../scss/main.scss */
+.about-us .jet-container {
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
-/* line 1278, ../scss/main.scss */
-.about-us .jet {
+/* line 1281, ../scss/main.scss */
+.about-us .jet-container .jet {
   width: 300px;
   -webkit-animation: jet 5s linear 0s infinite normal;
   -moz-animation: jet 5s linear 0s infinite normal;
   -ms-animation: jet 5s linear 0s infinite normal;
   animation: jet 5s linear 0s infinite normal;
 }
-/* line 1283, ../scss/main.scss */
-.about-us .cloud {
+/* line 1286, ../scss/main.scss */
+.about-us .jet-container .cloud {
   width: 115px;
   -webkit-animation: cloud 4s linear 0s infinite normal;
   -moz-animation: cloud 4s linear 0s infinite normal;
   -ms-animation: cloud 4s linear 0s infinite normal;
   animation: cloud 4s linear 0s infinite normal;
 }
-/* line 1288, ../scss/main.scss */
-.about-us .cloud-2 {
+/* line 1291, ../scss/main.scss */
+.about-us .jet-container .cloud-2 {
   width: 125px;
+  position: relative;
+  z-index: -1;
   -webkit-animation: cloud-2 5s linear 0s infinite normal;
   -moz-animation: cloud-2 5s linear 0s infinite normal;
   -ms-animation: cloud-2 5s linear 0s infinite normal;
   animation: cloud-2 5s linear 0s infinite normal;
 }
-/* line 1293, ../scss/main.scss */
+/* line 1300, ../scss/main.scss */
 .about-us h1 {
   color: #484848;
   font-family: 'Montserrat', 'Roboto', sans-serif;
 }
-/* line 1298, ../scss/main.scss */
+/* line 1305, ../scss/main.scss */
 .about-us p {
   color: #717171;
   font-size: 17px;
   line-height: 1.5;
   text-align: justify;
 }
-/* line 1305, ../scss/main.scss */
+/* line 1312, ../scss/main.scss */
 .about-us .founder-section {
   margin: 60px 0 0 0;
 }
-/* line 1308, ../scss/main.scss */
+/* line 1315, ../scss/main.scss */
 .about-us .founder-section .columns {
   text-align: center;
 }
-/* line 1312, ../scss/main.scss */
+/* line 1319, ../scss/main.scss */
 .about-us .founder-section .founder {
   border: 2px solid #4183d7;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 1317, ../scss/main.scss */
+/* line 1324, ../scss/main.scss */
 .about-us .founder-section .founder-name {
   margin-top: 15px;
   color: #4183d7;
   cursor: pointer;
 }
+/* line 1330, ../scss/main.scss */
+.about-us .founder-section .founder-name-small {
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 64em) {
+  /* line 1330, ../scss/main.scss */
+  .about-us .founder-section .founder-name-small {
+    display: none;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 1330, ../scss/main.scss */
+  .about-us .founder-section .founder-name-small {
+    display: none;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 1330, ../scss/main.scss */
+  .about-us .founder-section .founder-name-small {
+    display: block;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 1347, ../scss/main.scss */
+  .about-us .founder-section .founder-name-medium {
+    display: none;
+  }
+}
 
 /* TERMS & CONDITIONS / PRIVACY POLICY CONTAINER ============================================================*/
-/* line 1327, ../scss/main.scss */
+/* line 1358, ../scss/main.scss */
 .terms-conditions-container, .privacy-policy {
   margin-top: 130px;
 }
-/* line 1330, ../scss/main.scss */
+/* line 1361, ../scss/main.scss */
 .terms-conditions-container .columns, .privacy-policy .columns {
   border-left: 1px solid #4183d7;
 }
-/* line 1334, ../scss/main.scss */
+/* line 1365, ../scss/main.scss */
 .terms-conditions-container h1, .terms-conditions-container h3, .privacy-policy h1, .privacy-policy h3 {
   font-family: 'Montserrat', 'Roboto', sans-serif;
   color: #484848;
 }
-/* line 1339, ../scss/main.scss */
+/* line 1370, ../scss/main.scss */
 .terms-conditions-container h1, .privacy-policy h1 {
   margin-top: 0;
 }
-/* line 1343, ../scss/main.scss */
+/* line 1374, ../scss/main.scss */
 .terms-conditions-container p, .privacy-policy p {
   color: #717171;
   font-size: 12px;

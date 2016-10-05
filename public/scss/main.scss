@@ -1272,23 +1272,30 @@ $breakpoint-mobile-table: 480px;
 
 .about-us {
   margin-top: 130px;
-  position: relative;
-  overflow: hidden;
 
-  .jet {
-    width: 300px;
-    @include animation(jet 5s linear 0s infinite normal);
+  .jet-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    .jet {
+      width: 300px;
+      @include animation(jet 5s linear 0s infinite normal);
+    }
+
+    .cloud {
+      width: 115px;
+      @include animation(cloud 4s linear 0s infinite normal);
+    }
+
+    .cloud-2 {
+      width: 125px;
+      position: relative;
+      z-index: -1;
+      @include animation(cloud-2 5s linear 0s infinite normal);
+    }
   }
 
-  .cloud {
-    width: 115px;
-    @include animation(cloud 4s linear 0s infinite normal);
-  }
-
-  .cloud-2 {
-    width: 125px;
-    @include animation(cloud-2 5s linear 0s infinite normal);
-  }
 
   h1 {
     color: $main-text-color;
@@ -1318,6 +1325,30 @@ $breakpoint-mobile-table: 480px;
       margin-top: 15px;
       color: $accent;
       cursor: pointer;
+    }
+
+    .founder-name-small {
+      text-align: center;
+      width: 100%;
+
+      @include breakpoint(large){
+        display: none;
+      }
+
+      @include breakpoint(medium){
+        display: none;
+      }
+
+      @include breakpoint(small only){
+        display: block;
+      }
+    }
+
+    .founder-name-medium {
+
+      @include breakpoint(small only){
+        display: none;
+      }
     }
   }
 }
