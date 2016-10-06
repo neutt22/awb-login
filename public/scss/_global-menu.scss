@@ -191,7 +191,7 @@ $menu-sub-highlight: #bdc3c7;
 
 @mixin mobile-menu {
 
-    body {
+    html, body {
       overflow-x: hidden;
     }
 
