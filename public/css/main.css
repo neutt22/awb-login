@@ -566,7 +566,112 @@ body .scroll-top {
   font-weight: bold;
   text-align: center;
 }
-/* line 109, ../scss/_global-menu.scss */
+/* line 107, ../scss/_global-menu.scss */
+.menu-container nav .home {
+  position: absolute;
+  background-image: url("../img/home.png");
+  background-position: center;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  right: -11px;
+}
+/* line 113, ../scss/_global-menu.scss */
+.menu-container nav .get-support {
+  position: relative;
+}
+/* line 116, ../scss/_global-menu.scss */
+.menu-container nav .get-support:after {
+  content: '';
+  position: absolute;
+  background-image: url("../img/arrow-down.png");
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+/* line 122, ../scss/_global-menu.scss */
+.menu-container nav .live-chat {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+}
+/* line 28, ../scss/_main-settings.scss */
+.menu-container nav .live-chat:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/live-chat-2.png");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 14px;
+  height: 11px;
+  top: 5px;
+  left: -20px;
+}
+/* line 126, ../scss/_global-menu.scss */
+.menu-container nav .telephone {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+}
+/* line 28, ../scss/_main-settings.scss */
+.menu-container nav .telephone:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/phone-2.png");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 15px;
+  height: 15px;
+  top: 1px;
+  left: -20px;
+}
+/* line 130, ../scss/_global-menu.scss */
+.menu-container nav .email {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+}
+/* line 28, ../scss/_main-settings.scss */
+.menu-container nav .email:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/email.png");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 18px;
+  height: 18px;
+  top: 2px;
+  left: -22px;
+}
+/* line 134, ../scss/_global-menu.scss */
+.menu-container nav .my-account {
+  position: absolute;
+  background-image: url("../img/account-2.png");
+  background-position: center;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  right: -11px;
+}
+/* line 142, ../scss/_global-menu.scss */
 .menu-container nav ul li {
   padding: 10px;
   margin: 0 30px;
@@ -579,36 +684,36 @@ body .scroll-top {
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-/* line 118, ../scss/_global-menu.scss */
+/* line 151, ../scss/_global-menu.scss */
 .menu-container nav ul li:hover {
   color: #4183d7;
 }
-/* line 121, ../scss/_global-menu.scss */
+/* line 154, ../scss/_global-menu.scss */
 .menu-container nav ul li:hover a {
   color: #4183d7;
 }
-/* line 125, ../scss/_global-menu.scss */
+/* line 158, ../scss/_global-menu.scss */
 .menu-container nav ul li:hover .sub-menu {
   display: block;
 }
-/* line 130, ../scss/_global-menu.scss */
+/* line 163, ../scss/_global-menu.scss */
 .menu-container nav ul li a {
   -moz-transition: all 0.15s;
   -o-transition: all 0.15s;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-/* line 135, ../scss/_global-menu.scss */
+/* line 168, ../scss/_global-menu.scss */
 .menu-container nav ul li:last-child {
   margin-right: 0;
 }
-/* line 140, ../scss/_global-menu.scss */
+/* line 173, ../scss/_global-menu.scss */
 .menu-container nav ul li:last-child:hover .cart {
   content: url("../img/cart-accent.png");
   width: 23px;
   height: 23px;
 }
-/* line 150, ../scss/_global-menu.scss */
+/* line 183, ../scss/_global-menu.scss */
 .menu-container nav .sub-menu {
   background: white;
   display: none;
@@ -617,11 +722,11 @@ body .scroll-top {
   -webkit-box-shadow: 0 4px 4px rgba(121, 121, 121, 0.18);
   box-shadow: 0 4px 4px rgba(121, 121, 121, 0.18);
 }
-/* line 156, ../scss/_global-menu.scss */
+/* line 189, ../scss/_global-menu.scss */
 .menu-container nav .sub-menu ul {
   text-align: left;
 }
-/* line 159, ../scss/_global-menu.scss */
+/* line 192, ../scss/_global-menu.scss */
 .menu-container nav .sub-menu ul li {
   display: list-item;
   margin: 0;
@@ -633,31 +738,31 @@ body .scroll-top {
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-/* line 167, ../scss/_global-menu.scss */
+/* line 200, ../scss/_global-menu.scss */
 .menu-container nav .sub-menu ul li:hover {
   border-left: 2px solid #4183d7;
   background: rgba(65, 131, 215, 0.04);
   color: #4183d7;
 }
-/* line 172, ../scss/_global-menu.scss */
+/* line 205, ../scss/_global-menu.scss */
 .menu-container nav .sub-menu ul li:hover a {
   color: #4183d7;
 }
-/* line 177, ../scss/_global-menu.scss */
+/* line 210, ../scss/_global-menu.scss */
 .menu-container nav .sub-menu ul li a {
   color: #484848;
 }
-/* line 180, ../scss/_global-menu.scss */
+/* line 213, ../scss/_global-menu.scss */
 .menu-container nav .sub-menu ul li a:hover {
   color: #4183d7;
 }
 
-/* line 194, ../scss/_global-menu.scss */
+/* line 227, ../scss/_global-menu.scss */
 html, body {
   overflow-x: hidden;
 }
 
-/* line 198, ../scss/_global-menu.scss */
+/* line 231, ../scss/_global-menu.scss */
 .mobile-menu {
   background: rgba(255, 255, 255, 0.95);
   position: fixed;
@@ -674,12 +779,12 @@ html, body {
   box-shadow: 0 0 10px rgba(121, 121, 121, 0.23);
 }
 @media screen and (min-width: 64em) {
-  /* line 198, ../scss/_global-menu.scss */
+  /* line 231, ../scss/_global-menu.scss */
   .mobile-menu {
     display: none;
   }
 }
-/* line 212, ../scss/_global-menu.scss */
+/* line 245, ../scss/_global-menu.scss */
 .mobile-menu > a img {
   width: 55px;
   position: absolute;
@@ -689,7 +794,7 @@ html, body {
   top: 4px;
 }
 
-/* line 222, ../scss/_global-menu.scss */
+/* line 255, ../scss/_global-menu.scss */
 .navigation {
   margin: 0;
   padding: 0;
@@ -703,30 +808,31 @@ html, body {
   z-index: 0;
   list-style: none;
   background: #252525;
+  overflow-y: scroll;
 }
-/* line 236, ../scss/_global-menu.scss */
+/* line 270, ../scss/_global-menu.scss */
 .navigation li {
   -moz-transition: background 0.1s;
   -o-transition: background 0.1s;
   -webkit-transition: background 0.1s;
   transition: background 0.1s;
 }
-/* line 239, ../scss/_global-menu.scss */
+/* line 273, ../scss/_global-menu.scss */
 .navigation li:hover {
   background: #4183d7;
 }
 
-/* line 245, ../scss/_global-menu.scss */
+/* line 279, ../scss/_global-menu.scss */
 .navigation li:last-child a {
   border-bottom: none;
 }
 
-/* line 249, ../scss/_global-menu.scss */
+/* line 283, ../scss/_global-menu.scss */
 .nav-item {
   width: 200px;
 }
 
-/* line 253, ../scss/_global-menu.scss */
+/* line 287, ../scss/_global-menu.scss */
 .nav-item a {
   display: block;
   padding: 1em;
@@ -735,7 +841,7 @@ html, body {
   border-top: 1px solid #4c4c4c;
   border-bottom: 1px solid #0c0c0c;
 }
-/* line 261, ../scss/_global-menu.scss */
+/* line 295, ../scss/_global-menu.scss */
 .nav-item a span {
   background: red;
   color: whitesmoke;
@@ -753,7 +859,7 @@ html, body {
   border-radius: 50%;
 }
 
-/* line 274, ../scss/_global-menu.scss */
+/* line 308, ../scss/_global-menu.scss */
 .content {
   position: relative;
   top: 0;
@@ -772,7 +878,7 @@ html, body {
   background-position: center;
   background-size: cover;
 }
-/* line 288, ../scss/_global-menu.scss */
+/* line 322, ../scss/_global-menu.scss */
 .content .content-cover {
   height: 100%;
   background: black;
@@ -783,32 +889,32 @@ html, body {
   display: none;
 }
 
-/* line 299, ../scss/_global-menu.scss */
+/* line 333, ../scss/_global-menu.scss */
 .nav-trigger {
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
 
-/* line 304, ../scss/_global-menu.scss */
+/* line 338, ../scss/_global-menu.scss */
 label[for="nav-trigger"] {
   cursor: pointer;
 }
-/* line 307, ../scss/_global-menu.scss */
+/* line 341, ../scss/_global-menu.scss */
 label[for="nav-trigger"] img {
   width: 50px;
 }
 
-/* line 312, ../scss/_global-menu.scss */
+/* line 346, ../scss/_global-menu.scss */
 .nav-trigger:checked + .mobile-menu {
   left: 200px;
 }
 
-/* line 316, ../scss/_global-menu.scss */
+/* line 350, ../scss/_global-menu.scss */
 .nav-trigger:checked ~ .content {
   left: 200px;
 }
 
-/* line 320, ../scss/_global-menu.scss */
+/* line 354, ../scss/_global-menu.scss */
 .nav-trigger:checked ~ .content .content-cover {
   display: block;
 }
@@ -1344,7 +1450,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 71, ../scss/_main-settings.scss */
+/* line 101, ../scss/_main-settings.scss */
 .form-container input[type='submit']:hover {
   background-color: #286abd !important;
 }
@@ -1509,7 +1615,7 @@ footer .copyright div:first-child {
   transition: all .25s;
   margin-top: 20px;
 }
-/* line 71, ../scss/_main-settings.scss */
+/* line 101, ../scss/_main-settings.scss */
 .login-container input[type='submit']:hover {
   background-color: #286abd !important;
 }
@@ -2036,7 +2142,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 71, ../scss/_main-settings.scss */
+/* line 101, ../scss/_main-settings.scss */
 .sub-total input:hover {
   background-color: #286abd !important;
 }
@@ -2263,7 +2369,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 71, ../scss/_main-settings.scss */
+/* line 101, ../scss/_main-settings.scss */
 .contact-us-container .contact-form form input[type="submit"]:hover, .contact-us-container .contact-form form textarea[type="submit"]:hover {
   background-color: #286abd !important;
 }

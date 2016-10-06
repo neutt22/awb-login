@@ -28,6 +28,10 @@
           <li class="nav-item"><a href="/login">Login</a></li>
           <li class="nav-item"><a href="/register">Register</a></li>
           <li class="nav-item"><a href="/cart">My Cart <span>3</span></a></li>
+          <li class="nav-item"><a href="/cart">Dashboard</a></li>
+          <li class="nav-item"><a href="/cart">History</a></li>
+          <li class="nav-item"><a href="/cart">Settings</a></li>
+          <li class="nav-item"><a href="/cart">Logout</a></li>
           <li class="nav-item"><a href="/explore">Explore</a></li>
           <li class="nav-item"><a href="/about-us">About Us</a></li>
           <li class="nav-item"><a href="/contact-us">Contact Us</a></li>

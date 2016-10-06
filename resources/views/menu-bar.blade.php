@@ -17,20 +17,21 @@
         <a href="/"><img class="logo" src="img/logo.png" alt="logo" /></a>
         <ul>
           <li>
-            <a href="/">HOME</a>
+            <a href="/">HOME</a><span class="home"></span>
           </li>
           <li>
-            GET SUPPORT
+            <span class="get-support">GET SUPPORT</span>
             <div class="sub-menu">
               <ul>
-                <li>Live chat</li>
-                <li>954.235.0693</li>
-                <li>info@loginsvc.com</li>
+                <li><span class="live-chat">Live Chat</span></li>
+                <li><span class="telephone">954.235.0693</span></li>
+                <li><span class="email">info@loginsvc.com</span></li>
               </ul>
             </div>
           </li>
           <li>
             <a href="/login">LOGIN</a>  / <a href="/register">REGISTER</a>
+            <span class="my-account"></span>
             <div class="sub-menu">
               <ul>
                 <li><a href="#">Dashboard</a></li>

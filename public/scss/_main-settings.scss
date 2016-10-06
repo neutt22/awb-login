@@ -9,6 +9,36 @@ $form-label-color: #696969;
 $main-text-color: #484848;
 $sub-text-color: #717171;
 
+// Menu links image
+@mixin menu-image($image, $w, $h) {
+  position: absolute;
+  background-image: url($image);
+  background-position: center;
+  background-size: cover;
+  width: $w;
+  height: $w;
+}
+
+// Sublink image
+@mixin submenu-image($image, $w, $h, $t, $l) {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-image: url($image);
+    background-position: center;
+    background-size: cover;
+    @include inline-block;
+    width: $w;
+    height: $h;
+    top: $t;
+    left: $l;
+  }
+}
+
 // White triangle serves as form style
 @mixin triangle {
   top: -30px;

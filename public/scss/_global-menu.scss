@@ -104,6 +104,39 @@ $menu-sub-highlight: #bdc3c7;
         }
       }
 
+      .home {
+        @include menu-image('../img/home.png', 16px, 16px);
+        top: 11px;
+        right: -11px;
+      }
+
+      .get-support {
+        position: relative;
+
+        &:after {
+          content: '';
+          @include menu-image('../img/arrow-down.png', 20px, 20px);
+        }
+      }
+
+      .live-chat {
+        @include submenu-image('../img/live-chat-2.png', 14px, 11px, 5px, -20px);
+      }
+
+      .telephone {
+        @include submenu-image('../img/phone-2.png', 15px, 15px, 1px, -20px);
+      }
+
+      .email {
+        @include submenu-image('../img/email.png', 18px, 18px, 2px, -22px);
+      }
+
+      .my-account {
+        @include menu-image('../img/account-2.png', 16px, 16px);
+        top: 11px;
+        right: -11px;
+      }
+
       ul {
 
         li {
@@ -232,6 +265,7 @@ $menu-sub-highlight: #bdc3c7;
       z-index: 0;
       list-style: none;
       background: #252525;
+      overflow-y: scroll;
 
       li {
         @include transition(background .1s);

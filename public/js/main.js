@@ -17,6 +17,7 @@ $(document).ready(function () {
   // Set top menu height for transition animation
   var topMenu = $('.top-menu');
   var topMenuHeight = topMenu.height();
+  topMenuHeight = 24;
 
   topMenu.css('height', topMenu.height());
 

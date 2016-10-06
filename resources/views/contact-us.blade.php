@@ -50,13 +50,12 @@
     <div class="columns medium-6 large-7 large-offset-1">
       <div class="row">
         <div class="columns small-5">
-          <h4>Login Service Corp</h4>
+          <h4>LogIn Service Corp</h4>
           <span>
-            Fort Lauderdale<br>
-            Executive Airport - FKXE<br>
-            PO BOX 772606, <br>
-            Coral Springs, <br>
-            FL 33077
+            Fort Lauderdale Executive Airport<br>
+            FAA Identifier: FXE<br>
+            Po Box 772606<br>
+            Coral Springs, FL 33077
           </span>
         </div>
         <div class="columns small-7">
@@ -74,12 +73,12 @@
         </div>
       </div>
       <div class="row">
-        <div class="columns small-12">
+        <div class="columns small-12" style="border: 1px solid rgba(45, 45, 45, .3);">
           <iframe
             width="100%"
             height="450"
             frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-nwfdRODbIw8GhghZxcVeW8-q8LAa7do&q=Achieve+Without+Borders,+Inc." allowfullscreen>
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-nwfdRODbIw8GhghZxcVeW8-q8LAa7do&q=6000+NW+21st+Ave,+Fort+Lauderdale,+FL+33309" allowfullscreen>
           </iframe>
         </div>
       </div>
