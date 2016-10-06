@@ -6,7 +6,6 @@
 
 <div class="row login-header">
   <div class="columns small-12">
-    <div class="login-bg"></div>
     <h1>Login</h1>
     <p>Lorem ipsum dolor sit amed, consectetur elit.</p>
   </div>

@@ -5,7 +5,6 @@
 @section('contents')
 
 <div class="contact-us-container">
-  <div class="contact-us-bg"></div>
   <div class="row">
     <div class="columns small-12">
       <h1>Contact Us</h1>

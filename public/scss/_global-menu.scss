@@ -13,6 +13,14 @@ $menu-sub-highlight: #bdc3c7;
     z-index: 999;
     @include box-shadow(0 0 10px rgba(121, 121, 121, 0.23));
 
+    @include breakpoint(small only){
+      display: none;
+    }
+
+    @include breakpoint(medium only){
+      display: none;
+    }
+
     ul {
       padding: 0;
       margin: 0;
@@ -26,6 +34,7 @@ $menu-sub-highlight: #bdc3c7;
 
     .top-menu {
       background: #eaeaea;
+      background: $accent;
 
       a {
         text-decoration: none;
@@ -34,7 +43,7 @@ $menu-sub-highlight: #bdc3c7;
         margin: 0 30px;
         font-size: 12px;
         font-weight: 300;
-        color: $main-text-color;
+        color: whitesmoke;
       }
 
       ul {
@@ -177,4 +186,126 @@ $menu-sub-highlight: #bdc3c7;
     }
   }
 
+}
+
+@mixin mobile-menu {
+
+    .body {
+      overflow-x: hidden;
+    }
+
+    .mobile-menu {
+      background: $menu-bg-color;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 20;
+      left: 0;
+      @include transition(left .2s);
+      @include box-shadow(0 0 10px rgba(121, 121, 121, 0.23));
+
+      @include breakpoint(large) {
+        display: none;
+      }
+
+      > a img {
+        width: 55px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 4px;
+      }
+    }
+
+    .navigation {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      list-style: none;
+      background: #252525;
+
+      li {
+        @include transition(background .1s);
+
+        &:hover {
+          background: $accent;
+        }
+      }
+    }
+
+    .navigation li:last-child a {
+      border-bottom: none;
+    }
+
+    .nav-item {
+      width: 200px;
+    }
+
+    .nav-item a {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      color: whitesmoke;
+      border-top: 1px solid #4c4c4c;
+      border-bottom: 1px solid #0c0c0c;
+    }
+
+    // Site content
+    .content {
+      position: relative;
+      top: 0;
+      bottom: 100%;
+      left: 0;
+      z-index: 1;
+      background: white;
+      @include transition(all 0.2s);
+      @include box-shadow(-4px 0 11px rgba(0, 0, 0, 0.8));
+
+      background-image: url('../img/slide/default-page-bg.png');
+      background-position: center;
+      background-size: cover;
+
+      .content-cover {
+        height: 100%;
+        background: black;
+        opacity: 0.3;
+        width: 100%;
+        position: absolute;
+        z-index: 99999;
+        display: none;
+      }
+    }
+
+    .nav-trigger {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    label[for="nav-trigger"] {
+      cursor: pointer;
+
+      img {
+        width: 50px;
+      }
+    }
+
+    .nav-trigger:checked + .mobile-menu {
+      left: 200px;
+    }
+
+    .nav-trigger:checked ~ .content {
+      left: 200px;
+    }
+
+    .nav-trigger:checked ~ .content .content-cover {
+      display: block;
+    }
 }

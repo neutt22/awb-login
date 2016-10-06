@@ -6,7 +6,6 @@
 
 <div class="row align-center">
   <div class="columns small-12 medium-11 large-8 registration">
-    <div class="registration-bg"></div>
     <h1>Register</h1>
     <p>Lorem ipsum dolor sit amed, consectetur elit.</p>
     <div class="form-container">

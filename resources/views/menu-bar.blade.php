@@ -30,7 +30,7 @@
             </div>
           </li>
           <li>
-            LOGIN / REGISTER
+            <a href="/login">LOGIN</a>  / <a href="/register">REGISTER</a>
             <div class="sub-menu">
               <ul>
                 <li><a href="#">Dashboard</a></li>

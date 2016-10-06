@@ -22,13 +22,33 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        @include('menu-bar')
+        <ul class="navigation">
+          <li class="nav-item"><a href="#">Search</a></li>
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/login">Login</a></li>
+          <li class="nav-item"><a href="/register">Register</a></li>
+          <li class="nav-item"><a href="/cart">My Cart</a></li>
+          <li class="nav-item"><a href="/explore">Explore</a></li>
+          <li class="nav-item"><a href="/about-us">About Us</a></li>
+          <li class="nav-item"><a href="/contact-us">Contact Us</a></li>
+        </ul>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <div class="mobile-menu">
+          <label for="nav-trigger"><img src="img/hamburger.png" alt="menu" /></label>
+          <a href="/"><img src="img/logo.png" alt="logo" /></a>
+        </div>
 
-        <a href="#" class="scroll-top"></a>
+        <div class="content">
+          <div class="content-cover"></div>
+          @include('menu-bar')
 
-        @yield('contents')
+          <a href="#" class="scroll-top"></a>
 
-        @include('footer')
+          @yield('contents')
+
+          @include('footer')
+        </div>
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-3.1.0.min.js"><\/script>')</script>

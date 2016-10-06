@@ -7,7 +7,6 @@
 <div class="row">
   <div class="columns small-12">
     <div class="cart-header">
-      <div class="cart-bg"></div>
       <h1>My Cart</h1>
     </div>
   </div>
