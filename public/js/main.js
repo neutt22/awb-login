@@ -14,12 +14,20 @@ $(document).ready(function () {
     $('label[for="nav-trigger"]').click();
   });
 
+  // Set top menu height for transition animation
+  var topMenu = $('.top-menu');
+  var topMenuHeight = topMenu.height();
+
+  topMenu.css('height', topMenu.height());
+
   // Scroll to top display
   $(window).scroll(function(){
 
     if($(this).scrollTop() > 540) {
+      topMenu.height(0);
       $('.scroll-top').fadeIn();
     }else {
+      topMenu.css('height', topMenuHeight);
       $('.scroll-top').fadeOut();
     }
   });

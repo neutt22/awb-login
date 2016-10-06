@@ -35,6 +35,7 @@ $menu-sub-highlight: #bdc3c7;
     .top-menu {
       background: #eaeaea;
       background: $accent;
+      @include transition(height .3s);
 
       a {
         text-decoration: none;
@@ -256,6 +257,17 @@ $menu-sub-highlight: #bdc3c7;
       color: whitesmoke;
       border-top: 1px solid #4c4c4c;
       border-bottom: 1px solid #0c0c0c;
+
+      span {
+        background: red;
+        color: whitesmoke;
+        font-weight: bold;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        @include inline-block;
+        @include border-radius(50%);
+      }
     }
 
     // Site content
