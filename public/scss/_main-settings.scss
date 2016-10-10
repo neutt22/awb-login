@@ -248,3 +248,19 @@ $sub-text-color: #717171;
     @include transform( translateX(350px) );
   }
 }
+
+// Price animation
+@include keyframes(price) {
+  0% {
+    @include transform(scale(0));
+  }
+
+  70% {
+    @include opacity(1);
+  }
+
+  100% {
+    @include transform(scale(1.2));
+    @include opacity(0);
+  }
+}

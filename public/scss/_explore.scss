@@ -1,0 +1,183 @@
+@import "compass";
+@import "main-settings";
+
+.explore-container {
+  background-image: url('../img/explore-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-bottom: 20px;
+
+  header {
+    background-image: url('../img/explore.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    height: 130px;
+
+    h1 {
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+      color: #073779;
+      margin: 0;
+      @include text-shadow(0 1px 0 rgba(255, 255, 255, .5));
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .membership {
+
+    h3 {
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+      text-align: center;
+    }
+
+    ul {
+      list-style-image: url('../img/list-bullet.png');
+      line-height: 1.6;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .price {
+      text-align: center;
+      @include inline-block;
+      vertical-align: top;
+      width: 200px;
+      position: relative;
+
+      @include breakpoint(medium only){
+        width: 160px;
+      }
+
+      div:first-of-type {
+        background: $accent;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50px;
+        top: -10px;
+        @include opacity(.3);
+        z-index: 0;
+        @include animation(price 2s linear 0s infinite normal);
+
+        @include breakpoint(medium only){
+          left: 30px;
+        }
+      }
+
+      div {
+        background: $accent;
+        @include inline-block;
+        width: 80px;
+        height: 80px;
+        @include border-radius(50%);
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 999;
+
+        span:first-of-type {
+          line-height: 80px;
+        }
+      }
+
+      h4, h5 {
+        margin: 0;
+        font-weight: normal;
+      }
+
+    }
+
+    .sign-up{
+      text-align: center;
+
+      a {
+        font-family: 'Montserrat', 'Roboto', sans-serif;
+        @include inline-block;
+        overflow: hidden;
+        line-height: 46px;
+        padding: 9px 40px;
+        font-size: 25px;
+        color: #073779;
+        text-align: center;
+        text-decoration: none;
+        @include text-shadow(0 1px 0 rgba(255, 255, 255, .5));
+        background-color: #247edd;
+        background-clip: padding-box;
+        border: 1px solid;
+        border-color: #1c65b2 #18589c #18589c;
+        border-radius: 4px;
+        @include box-shadow(inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2));
+        @include background-image(linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04)));
+
+        &:hover {
+          @include background-image(linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, .2) 51%, rgba(0, 0, 0, 0.04)));
+        }
+      }
+    }
+  }
+
+}
+
+.events {
+  background: white;
+
+  h1 {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    margin: 0;
+    margin-top: 40px;
+    color: $main-text-color;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .columns h3 + span {
+    font-size: 12px;
+    color: $sub-text-color;
+  }
+
+  .event-date {
+    font-weight: bold;
+    padding-left: 5px;
+    border-left: 4px solid $accent;
+  }
+
+  ul {
+    margin: 10px 0 50px 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      border: 1px solid;
+      border-color: #b1b1b1 transparent transparent transparent;
+      padding: 20px 0;
+      background-image: url('../img/events-arrow.png');
+      background-position: right;
+      background-repeat: no-repeat;
+      @include transition(all .2s);
+
+      &:hover {
+        background-color: rgba(65, 131, 215, .05);
+      }
+
+      a {
+        display: block;
+        text-align: none;
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    li:last-child {
+      border: 1px solid;
+      border-color: #b1b1b1 transparent;
+    }
+  }
+}
