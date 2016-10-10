@@ -265,7 +265,9 @@ $menu-sub-highlight: #bdc3c7;
       z-index: 0;
       list-style: none;
       background: #252525;
-      overflow-y: scroll;
+
+      // Small screen bug where scroll-y shows up when scrolling down
+      // overflow-y: scroll;
 
       li {
         @include transition(background .1s);
