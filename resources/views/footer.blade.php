@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="row footer-links-section">
-    <div class="small-12 medium-3 columns">
+    <div class="small-12 medium-5 large-4 columns">
       <ul class="footer-brand">
         <li><a href="/"><img src="img/logo.png" alt="logo" /></a><span class="brand"><a href="/">LogIn Services</a></span></li>
         <li><p>

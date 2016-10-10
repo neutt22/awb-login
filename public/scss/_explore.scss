@@ -37,10 +37,20 @@
     ul {
       list-style-image: url('../img/list-bullet.png');
       line-height: 1.6;
+
+      @include breakpoint(small only) {
+        font-size: 11px;
+        padding: 0;
+        list-style-position: inside;
+      }
     }
 
     p {
       text-align: center;
+
+      @include breakpoint(small only) {
+        margin-top: 40px;
+      }
     }
 
     .price {
@@ -50,8 +60,12 @@
       width: 200px;
       position: relative;
 
-      @include breakpoint(medium only){
+      @include breakpoint(medium only) {
         width: 160px;
+      }
+
+      @include breakpoint(small only) {
+        width: 150px;
       }
 
       div:first-of-type {
@@ -65,8 +79,12 @@
         z-index: 0;
         @include animation(price 2s linear 0s infinite normal);
 
-        @include breakpoint(medium only){
+        @include breakpoint(medium only) {
           left: 30px;
+        }
+
+        @include breakpoint(small only) {
+          left: 25px;
         }
       }
 
@@ -78,7 +96,7 @@
         @include border-radius(50%);
         margin-bottom: 20px;
         position: relative;
-        z-index: 999;
+        z-index: 99;
 
         span:first-of-type {
           line-height: 80px;
@@ -123,8 +141,63 @@
 
 }
 
-.events {
+.events-links-container {
   background: white;
+  margin-bottom: -40px;
+
+  .app-link {
+
+    @include breakpoint(small only) {
+      padding-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+      margin: 0;
+      margin-top: 40px;
+      color: $main-text-color;
+
+      @include breakpoint(small only) {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      line-height: 1.2;
+      font-weight: bold;
+      color: $sub-text-color;
+    }
+
+    .app-store, .play-store {
+      padding: 80px 0;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    .app-store {
+      background-image: url('../img/iphone.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    .play-store {
+      background-image: url('../img/nexus.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      @include breakpoint(small only) {
+        background-size: 100px;
+      }
+    }
+  }
+
+}
+
+.events {
 
   h1 {
     font-family: 'Montserrat', 'Roboto', sans-serif;
