@@ -3,9 +3,11 @@
     <div class="small-12 medium-5 large-4 columns">
       <ul class="footer-brand">
         <li><a href="/"><img src="img/logo.png" alt="logo" /></a><span class="brand"><a href="/">LogIn Services</a></span></li>
-        <li><p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-        </p></li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+        </li>
       </ul>
     </div>
     <div class="small-6 medium-2 columns">
