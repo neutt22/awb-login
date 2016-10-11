@@ -58,7 +58,6 @@
     <div class="payment-methods">
       <h1>PAYMENT METHODS</h1>
       <a href="#"><img src="img/payment-options-colored.png" alt="payment options" /></a>
-      <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
     </div>
   </div>
   <div class="columns small-12 medium-4 small-order-2 medium-order-2">
