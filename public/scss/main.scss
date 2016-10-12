@@ -3,6 +3,7 @@
 @import "main-settings";
 @import "global-menu";
 @import "explore";
+@import "checkout";
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -1061,6 +1062,8 @@ $breakpoint-mobile-table: 480px;
 }
 
 /* CHECKOUT CONTAINER ============================================================*/
+
+@include checkout;
 
 /* ABOUT US CONTAINER ============================================================*/
 

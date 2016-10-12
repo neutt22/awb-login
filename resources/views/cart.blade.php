@@ -71,10 +71,11 @@
   </div>
   <div class="columns small-12 medium-4 small-order-1 medium-order-3">
     <div class="sub-total">
-      <form class="" action="index.html" method="post">
+      <form action="/checkout" method="get">
+        {{ csrf_field() }}
         <span>SUBTOTAL</span>
         <span>$1,849.50</span>
-        <input type="button" name="name" value="PROCEED TO CHECKOUT">
+        <input type="submit" value="PROCEED TO CHECKOUT">
       </form>
     </div>
     <div class="checkout-notice">

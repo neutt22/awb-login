@@ -1,0 +1,200 @@
+@import "compass";
+@import "main-settings";
+
+$page-title-font: 'Montserrat', 'Roboto', sans-serif;
+
+@mixin checkout-title {
+  margin-top: 0;
+  color: $main-text-color;
+  font-size: 16px;
+}
+
+@mixin label-style {
+  color: $main-text-color;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@mixin required {
+    &:after {
+      content: '*';
+      color: red;
+    }
+}
+
+@mixin checkout {
+
+  .checkout-container {
+    padding-top: 130px;
+
+    h1 {
+      font-family: $page-title-font;
+      color: $main-text-color;
+    }
+
+    label {
+      @include label-style;
+    }
+
+    input:not([type='checkbox']):not([type='radio']), select {
+      @include input-default;
+
+      &:focus {
+        @include input-focus;
+      }
+    }
+
+    p {
+      font-size: 13px;
+
+      + span {
+        color: $sub-text-color;
+        font-size: 13px;
+        display: block;
+        margin-bottom: 15px;
+
+        &:before {
+          content: '*';
+          color: red;
+        }
+      }
+    }
+
+    .required {
+      @include required;
+    }
+
+    .separator {
+      margin: 25px 0;
+      border-bottom: 1px solid #c5c5c5;
+    }
+
+    .billing-shipping-info {
+      @include form-accent;
+      padding: 15px 15px;
+
+      h3 {
+        @include checkout-title;
+      }
+    }
+
+    .shipping-method {
+      @include form-accent;
+      padding: 15px 15px;
+
+      h3 {
+        @include checkout-title;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .payment-method {
+      @include form-accent;
+      padding: 15px 15px;
+      margin-top: 30px;
+
+      h3 {
+        @include checkout-title;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      input {
+
+        &[type='radio'] {
+          @include transform(scale(1.25));
+          margin-right: 10px;
+        }
+      }
+
+      .what-is {
+        margin-left: 20px;
+        text-decoration: none;
+        color: $accent;
+        font-size: 13px;
+      }
+
+      .sec-code {
+        position: relative;
+        left: -35px;
+        bottom: -9px;
+      }
+
+      .paypal {
+        margin: 10px 0 15px 0;
+      }
+    }
+
+    .order-summary {
+      @include form-accent;
+      padding: 15px 15px;
+
+      h3 {
+        @include checkout-title;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .cart-count {
+        font-weight: bold;
+        color: $accent;
+        font-size: 15px;
+      }
+
+      img {
+        width: 50px;
+      }
+
+      .item {
+        font-size: 15px;
+      }
+
+      table:first-of-type tr:first-child td  {
+        padding-top: 15px;
+      }
+
+      td {
+        padding-left: 15px;
+      }
+
+      td:first-child {
+        padding: 0;
+        text-align: right;
+      }
+    }
+
+    .total-charges {
+      @include form-accent;
+      padding: 15px 15px;
+      margin-top: 30px;
+
+      h3 {
+        @include checkout-title;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .computation {
+
+        .subtotal, .shipping, .total {
+          text-align: right;
+        }
+      }
+
+      input {
+        @include button-default;
+      }
+    }
+
+  }
+
+}
