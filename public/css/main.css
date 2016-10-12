@@ -2815,6 +2815,22 @@ footer .copyright div:first-child {
 .checkout-container .total-charges input:hover {
   background-color: #286abd !important;
 }
+/* line 210, ../scss/_checkout.scss */
+.checkout-container .order-agree {
+  color: #717171;
+  font-size: 11px;
+}
+@media screen and (max-width: 63.9375em) {
+  /* line 210, ../scss/_checkout.scss */
+  .checkout-container .order-agree {
+    text-align: right;
+  }
+}
+/* line 218, ../scss/_checkout.scss */
+.checkout-container .order-agree a {
+  text-decoration: none;
+  color: #4183d7;
+}
 
 /* ABOUT US CONTAINER ============================================================*/
 /* line 1070, ../scss/main.scss */

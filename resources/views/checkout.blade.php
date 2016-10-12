@@ -193,7 +193,7 @@
                 <h3>Payment Method</h3>
                 <p></p>
                 <span>Required information</span>
-                <input id="paypal" type="radio" name="payment-method" value="paypal">
+                <input id="paypal" type="radio" name="payment-method" value="paypal" checked>
                 <label for="paypal">Paypal Express Checkout</label>
                 <span><a target="_blank" href="https://www.paypal.com/ph/webapps/mpp/paypal-popup" class="what-is">What is Paypal?</a></span>
                 <div class="row">
@@ -325,6 +325,12 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="columns small-12">
+              <p class="order-agree">
+                By placing your order, you agree to Login's <a href="/privacy-policy">privacy note</a>
+                and <a href="/terms-conditions">conditions of use</a>.
+              </p>
             </div>
           </div>
         </div>

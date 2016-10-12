@@ -207,6 +207,20 @@ $page-title-font: 'Montserrat', 'Roboto', sans-serif;
       }
     }
 
+    .order-agree {
+      color: $sub-text-color;
+      font-size: 11px;
+
+      @include breakpoint(medium down) {
+        text-align: right;
+      }
+
+      a {
+        text-decoration: none;
+        color: $accent;
+      }
+    }
+
   }
 
 }
