@@ -82,6 +82,10 @@ $page-title-font: 'Montserrat', 'Roboto', sans-serif;
       @include form-accent;
       padding: 15px 15px;
 
+      @include breakpoint(small only) {
+        margin-top: 30px;
+      }
+
       h3 {
         @include checkout-title;
       }
@@ -133,6 +137,14 @@ $page-title-font: 'Montserrat', 'Roboto', sans-serif;
     .order-summary {
       @include form-accent;
       padding: 15px 15px;
+
+      @include breakpoint(medium only) {
+        margin-top: 30px;
+      }
+
+      @include breakpoint(small only) {
+        margin-top: 30px;
+      }
 
       h3 {
         @include checkout-title;

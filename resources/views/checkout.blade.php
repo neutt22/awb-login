@@ -14,7 +14,7 @@
     <form class="" action="index.html" method="post">
       <div class="row">
         {{-- BILLING AND SHIPPING INFO --}}
-        <div class="columns large-4">
+        <div class="columns small-12 medium-6 large-4">
           <div class="billing-shipping-info">
             <h3>Billing Information</h3>
             <p>
@@ -158,7 +158,7 @@
           </div>
         </div>
 
-        <div class="columns large-4">
+        <div class="columns small-12 medium-6 large-4">
           <div class="row">
             <div class="columns small-12">
               {{-- SHIPPING METHOD --}}
@@ -239,7 +239,7 @@
                 <div class="row">
                   <div class="columns large-12">
                     <div class="row">
-                      <div class="columns small-6 small-offset-1">
+                      <div class="columns small-6 large-offset-1">
                         <label for="security-code" class="required">Security Code:</label><br>
                         <input id="security-code" type="text" name="security-code">
                       </div>
