@@ -15,15 +15,29 @@
   <div class="columns small-12 medium-6 large-4 login">
     <div class="login-container">
       <div class="login-arrow"></div>
-      <form class="" action="index.html" method="post">
+      <div class="row">
+        <div class="columns small-12">
+          @if(count($errors) > 0)
+            <div class="error-container">
+              <ul>
+                @foreach($errors->all() as $error)
+                  <li>{{ $error }}</li>
+                @endforeach
+              </ul>
+            </div>
+          @endif
+        </div>
+      </div>
+      <form class="" action="{{ url('/login') }}" method="POST">
+        {{ csrf_field() }}
         <div class="row">
           <div class="columns small-12">
-            <input type="text" name="email" placeholder="Email address">
+            <input type="email" name="email" placeholder="Email address" required>
           </div>
         </div>
         <div class="row">
           <div class="columns small-12">
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password" required>
           </div>
         </div>
         <div class="row">

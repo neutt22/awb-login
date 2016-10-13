@@ -30,16 +30,26 @@
             </div>
           </li>
           <li>
-            <a href="/login">LOGIN</a>  / <a href="/register">REGISTER</a>
-            <span class="my-account"></span>
-            <div class="sub-menu">
-              <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Logout</a></li>
-              </ul>
-            </div>
+            @if( Auth::check() )
+              <a href="/dashboard">MY ACCOUNT</a>
+              <span class="my-account"></span>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li>
+                    <a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                      {{ csrf_field() }}
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            @else
+              <a href="/login">LOGIN</a>  / <a href="/register">REGISTER</a>
+              <span class="my-account"></span>
+            @endif
           </li>
           <li><a href="/cart"><img class="cart" src="img/cart.png" alt="cart" /><span>3</span></a></li>
         </ul>
