@@ -53,9 +53,11 @@ class RegisterController extends Controller
             'first_name' => 'required|max:255',
             'middle_name' => 'required|max:255',
             'last_name' => 'required|max:255',
+            'address_1' => 'required|min:10',
             'type' => 'required',
+            'agree' => 'required|accepted',
             'password' => 'required|min:6|confirmed',
-        ]);
+        ], ['agree.*' => 'You did not agree to the terms of use.']);
     }
 
     /**
@@ -75,9 +77,12 @@ class RegisterController extends Controller
             'company' => $data['company'],
             'address_1' => $data['address_1'],
             'address_2' => $data['address_2'],
-            'company_phone_number' => $data['company_phone_number'],
+            'phone' => $data['phone'],
+            'co_phone' => $data['co_phone'],
             'type' => $data['type'],
             'comments' => $data['comments'],
+            'agree' => true,
+            'supplier_call_date' => $data['supplier_call_date'],
             'password' => bcrypt($data['password']),
         ]);
     }

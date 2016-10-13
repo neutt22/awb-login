@@ -32,7 +32,7 @@
         {{ csrf_field() }}
         <div class="row">
           <div class="columns small-12">
-            <input type="email" name="email" placeholder="Email address" required>
+            <input type="email" name="email" placeholder="Email address" value="{{ old('email') }}" required>
           </div>
         </div>
         <div class="row">
@@ -47,7 +47,6 @@
         </div>
         <div class="row">
           <div class="columns small-12">
-            {{-- {!! app('captcha')->display(); !!} --}}
             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
             <div class="g-recaptcha" data-sitekey="6Le1LwgUAAAAAI0sfM3xUAzJJ17Gs0H1m-oWO_vf" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
           </div>
