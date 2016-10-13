@@ -7,19 +7,34 @@
 <div class="row align-center">
   <div class="columns small-12 medium-11 large-8 registration">
     <h1>Register</h1>
+    @foreach($errors->all() as $err)
+      {{ $err }}
+    @endforeach
     <p>Lorem ipsum dolor sit amed, consectetur elit.</p>
     <div class="form-container">
       <div class="registration-arrow"></div>
-      <form id="registration" class="" action="index.html" method="post">
+      <form id="registration" class="" action="{{ url('/register') }}" method="POST">
+        {{ csrf_field() }}
         <div class="row align-center">
           <div class="columns small-12 medium-6">
-            <input type="text" name="email" placeholder="Email address">
+            <input type="email" name="email" placeholder="Email address" value="{{ old('email') }}" required>
           </div>
           <div class="columns small-6 medium-3">
             <input type="radio" name="type" value="buyer" id="buyer" checked><label for="buyer">I'm a buyer</label>
           </div>
           <div class="columns small-6 medium-3">
             <input type="radio" name="type" value="seller" id="supplier"><label for="supplier">I'm a supplier</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns small-12 medium-3">
+            <input type="text" name="first_name" placeholder="First name" value="{{ old('first_name') }}" required>
+          </div>
+          <div class="columns small-12 medium-3">
+            <input type="text" name="middle_name" placeholder="Middle name" value="{{ old('middle_name') }}" required>
+          </div>
+          <div class="columns small-12 medium-6">
+            <input type="text" name="last_name" placeholder="Last name" value="{{ old('last_name') }}" required>
           </div>
         </div>
         <div class="row">
@@ -36,41 +51,30 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="columns small-12 medium-3">
-            <input type="text" name="first_name" placeholder="First name">
-          </div>
-          <div class="columns small-12 medium-3">
-            <input type="text" name="middle_name" placeholder="Middle name">
+        <div class="row align-center">
+          <div class="columns small-12 medium-6">
+            <input type="text" name="address_1" placeholder="Address 1" value="{{ old('address_1') }}" required>
           </div>
           <div class="columns small-12 medium-6">
-            <input type="text" name="last_name" placeholder="Last name">
+            <input type="text" name="address_2" placeholder="Address 2" value="{{ old('address_2') }}">
           </div>
         </div>
         <div class="row align-center">
           <div class="columns small-12 medium-6">
-            <input type="text" name="address1" placeholder="Address 1">
+            <input type="text" name="phone" placeholder="Phone number" value="{{ old('phone') }}">
           </div>
           <div class="columns small-12 medium-6">
-            <input type="text" name="address2" placeholder="Address 2">
-          </div>
-        </div>
-        <div class="row align-center">
-          <div class="columns small-12 medium-6">
-            <input type="text" name="phone" placeholder="Phone number">
-          </div>
-          <div class="columns small-12 medium-6">
-            <input type="text" name="phone_work" placeholder="Company phone number">
+            <input type="text" name="company_phone_number" placeholder="Company phone number" value="{{ old('phone_work') }}">
           </div>
         </div>
         <div class="row align-center">
           <div class="columns small-12 medium-6">
             <div class="row">
               <div class="columns small-12">
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Password" required>
               </div>
               <div class="columns small-12">
-                <input type="password" name="repassword" placeholder="Re-password">
+                <input type="password" name="password_confirmation" placeholder="Re-password" required>
               </div>
             </div>
           </div>
@@ -85,7 +89,7 @@
         </div>
         <div class="row align-center">
           <div class="columns small-12 tac">
-            <input type="checkbox" name="name" value="agree" id="agree"><label for="agree">I agree to the <a href="/terms-and-conditions">Terms of use</a>.</label>
+            <input type="checkbox" name="agree" value="yes" id="agree"><label for="agree">I agree to the <a href="/terms-and-conditions">Terms of use</a>.</label>
           </div>
         </div>
         <div class="row align-center">

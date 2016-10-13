@@ -9,6 +9,14 @@ $form-label-color: #696969;
 $main-text-color: #484848;
 $sub-text-color: #717171;
 
+.error-container {
+  background-color: #f9cece;
+  border: 1px solid #d74141;
+  color: #d74141;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
 // Menu links image
 @mixin menu-image($image, $w, $h) {
   position: absolute;
