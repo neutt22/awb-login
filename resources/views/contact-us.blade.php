@@ -19,20 +19,34 @@
       </p>
       <div class="contact-form">
         <div class="contact-us-arrow"></div>
-        <form class="" action="index.html" method="post">
+        <div class="row">
+          <div class="columns large-12">
+            @if(count($errors) > 0)
+            <div class="error-container">
+              <ul>
+                @foreach($errors->all() as $error)
+                  <li>{{ $error }}</li>
+                @endforeach
+              </ul>
+            </div>
+            @endif
+          </div>
+        </div>
+        <form class="" action="/contact-us" method="POST">
+          {{ csrf_field() }}
           <div class="row">
             <div class="columns small-12">
-              <input type="text" name="name" placeholder="Name">
+              <input type="text" name="name" placeholder="Name" required>
             </div>
           </div>
           <div class="row">
             <div class="columns small-12">
-              <input type="text" name="email" placeholder="Email address">
+              <input type="email" name="email" placeholder="Email address" required>
             </div>
           </div>
           <div class="row">
             <div class="columns small-12">
-              <textarea name="message" rows="7" cols="40" placeholder="Type a message..."></textarea>
+              <textarea name="message" rows="7" cols="40" placeholder="Type a message..." required></textarea>
             </div>
           </div>
           <div class="row">
