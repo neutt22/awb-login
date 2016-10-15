@@ -1,0 +1,161 @@
+@import "compass";
+@import "main-settings";
+
+.dashboard-container {
+  padding-top: 130px;
+
+  .profile-quick {
+    background: white;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @include box-shadow(0 0 24px rgba(144, 144, 144, .3));
+    border-bottom: 5px solid $accent;
+
+    h1 {
+      color: $main-text-color;
+      font-size: 20px;
+      margin: 0;
+      line-height: 1;
+    }
+
+    span {
+      color: $accent;
+      font-weight: bold;
+    }
+
+    .profile-image {
+      position: absolute;
+      top: -60px;
+
+      img {
+        @include border-radius(50%);
+        border: 2px solid $accent;
+        width: 150px;
+      }
+
+      h2 {
+        font-size: 13px;
+        color: $main-text-color;
+      }
+
+      span {
+        font-family: sans-serif;
+        color: $sub-text-color;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .inventory-listing-container {
+    background: white;
+    margin-top: 40px;
+    position: relative;
+    @include box-shadow(0 0 24px rgba(144, 144, 144, .3));
+    border-bottom: 5px solid $accent;
+    padding-top: 15px;
+    padding-bottom: 40px;
+
+    h2 {
+      color: $main-text-color;
+      font-size: 16px;
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .listing-options {
+
+      .disabled {
+        color: green;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+          @include inline-block;
+
+          a {
+            display: block;
+            padding: 5px;
+            background: $accent;
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 10px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .listing-search {
+
+      input {
+        width: 100%;
+        font: 11px;
+        outline: none;
+        padding: 2px;
+      }
+    }
+
+    table {
+      width: 100%;
+      text-align: left;
+      font-size: 12px;
+
+      tr {
+
+        &:nth-child(even) {
+          background: #f7f7f7;
+        }
+
+        &:hover {
+          background: #d8e9ff;
+        }
+
+        th:last-child {
+          text-align: right;
+        }
+
+        td:last-child {
+          text-align: right;
+        }
+
+        td {
+          padding: 5px 0;
+
+          a {
+            margin-left: 10px;
+            font-family: 'Helvetica', sans-serif;
+            font-size: 11px;
+            text-decoration: none;
+            color: $accent;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .listing-sort-container {
+    text-align: right;
+
+    select {
+      width: initial;
+      padding: 5px;
+      outline: none;
+    }
+  }
+}

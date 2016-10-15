@@ -17,6 +17,15 @@ $sub-text-color: #717171;
   margin-bottom: 10px;
 }
 
+.success-container {
+  background-color: #d5f9ce;
+  border: 1px solid #68d741;
+  color: #41d747;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
 // Menu links image
 @mixin menu-image($image, $w, $h) {
   position: absolute;

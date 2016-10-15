@@ -35,7 +35,7 @@
               <span class="my-account"></span>
               <div class="sub-menu">
                 <ul>
-                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="/dashboard">Dashboard</a></li>
                   <li><a href="#">History</a></li>
                   <li><a href="#">Settings</a></li>
                   <li>

@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/dashboard', 'UserController@getDashboard');
+
 Route::get('/cart', function () {
     return view('cart');
 });
