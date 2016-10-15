@@ -7,6 +7,16 @@
   margin-bottom: 10px;
 }
 
+/* line 20, ../scss/_main-settings.scss */
+.success-container {
+  background-color: #d5f9ce;
+  border: 1px solid #68d741;
+  color: #41d747;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
 @-webkit-keyframes jet {
   0% {
     -moz-transform: translateY(0);
@@ -982,7 +992,7 @@ body .scroll-top {
   position: relative;
   margin-left: 10px;
 }
-/* line 36, ../scss/_main-settings.scss */
+/* line 45, ../scss/_main-settings.scss */
 .menu-container nav .live-chat:before {
   content: '';
   position: absolute;
@@ -1005,7 +1015,7 @@ body .scroll-top {
   position: relative;
   margin-left: 10px;
 }
-/* line 36, ../scss/_main-settings.scss */
+/* line 45, ../scss/_main-settings.scss */
 .menu-container nav .telephone:before {
   content: '';
   position: absolute;
@@ -1028,7 +1038,7 @@ body .scroll-top {
   position: relative;
   margin-left: 10px;
 }
-/* line 36, ../scss/_main-settings.scss */
+/* line 45, ../scss/_main-settings.scss */
 .menu-container nav .email:before {
   content: '';
   position: absolute;
@@ -1834,7 +1844,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 109, ../scss/_main-settings.scss */
+/* line 118, ../scss/_main-settings.scss */
 .form-container input[type='submit']:hover {
   background-color: #286abd !important;
 }
@@ -1999,7 +2009,7 @@ footer .copyright div:first-child {
   transition: all .25s;
   margin-top: 20px;
 }
-/* line 109, ../scss/_main-settings.scss */
+/* line 118, ../scss/_main-settings.scss */
 .login-container input[type='submit']:hover {
   background-color: #286abd !important;
 }
@@ -2541,7 +2551,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 109, ../scss/_main-settings.scss */
+/* line 118, ../scss/_main-settings.scss */
 .sub-total input:hover {
   background-color: #286abd !important;
 }
@@ -2820,7 +2830,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 109, ../scss/_main-settings.scss */
+/* line 118, ../scss/_main-settings.scss */
 .checkout-container .total-charges input:hover {
   background-color: #286abd !important;
 }
@@ -3039,7 +3049,7 @@ footer .copyright div:first-child {
   color: whitesmoke;
   transition: all .25s;
 }
-/* line 109, ../scss/_main-settings.scss */
+/* line 118, ../scss/_main-settings.scss */
 .contact-us-container .contact-form form input[type="submit"]:hover, .contact-us-container .contact-form form textarea[type="submit"]:hover {
   background-color: #286abd !important;
 }

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests;
 use App\Mail\ContactedUs;
+use App\Mail\EmailReceived;
 
 class ContactController extends Controller
 {
@@ -19,9 +20,15 @@ class ContactController extends Controller
         'message' => 'required|min:10',
       ]);
 
-      Mail::to($request->email)
-          ->send(new ContactedUs());
+      // For Login Admin
+      Mail::to('admin@loginsvc.com')
+          ->queue(new ContactedUs($request->name, $request->email, $request->message));
 
-      return 'your sending an email';
+      // System acknowledgement to the sender
+      Mail::to($request->email)
+          ->queue(new EmailReceived($request->name));
+
+      return view('contact-us')
+            ->withMessage('Thank you for contacting us! We will get back to you immediately.');
     }
 }

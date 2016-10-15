@@ -1,5 +1,13 @@
-someone contacted u:
+Hi Admin,
 
-hi
+Someone left a message through our contact page.
 
-{{ $name }}
+Name: {{ $name }}
+Email Address: {{ $email }}
+
+Message:
+{{ $inqury }}
+------END OF MESSAGE------
+
+Cheers,
+System Mailer

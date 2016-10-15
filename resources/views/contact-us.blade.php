@@ -20,6 +20,15 @@
       <div class="contact-form">
         <div class="contact-us-arrow"></div>
         <div class="row">
+          <div class="columns small-12">
+            @if(isset($message))
+              <div class="success-container">
+                {{ $message }}
+              </div>
+            @endif
+          </div>
+        </div>
+        <div class="row">
           <div class="columns large-12">
             @if(count($errors) > 0)
             <div class="error-container">
@@ -55,7 +64,7 @@
               <div class="g-recaptcha" data-sitekey="6Le1LwgUAAAAAI0sfM3xUAzJJ17Gs0H1m-oWO_vf" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
             </div>
             <div class="columns small-12">
-              <input type="submit" name="name" value="Send">
+              <input type="submit" value="Send">
             </div>
           </div>
         </form>
