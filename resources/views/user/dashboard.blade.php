@@ -112,6 +112,7 @@
   <div class="row">
     <div class="columns large-12 inventory-upload">
       <form action="/dashboard/upload/csv" method="POST" enctype="multipart/form-data">
+        {{ csrf_field() }}
         <div class="row align-middle">
           <div class="columns large-2">
             <h2>Update Listing</h2>

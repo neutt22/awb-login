@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+// Upload Supplier CSV
+Route::post('/dashboard/upload/csv', 'UserController@postUploadCsv');
+
 Route::get('/dashboard', 'UserController@getDashboard');
 
 Route::get('/cart', function () {
