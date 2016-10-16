@@ -55,6 +55,7 @@ class RegisterController extends Controller
             'last_name' => 'required|max:255',
             'address_1' => 'required|min:10',
             'type' => 'required',
+            'supplier_call_date' => 'date',
             'agree' => 'required|accepted',
             'password' => 'required|min:6|confirmed',
         ], ['agree.*' => 'You did not agree to the terms of use.']);

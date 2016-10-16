@@ -52,7 +52,7 @@
             <div class="listing-options">
               <ul>
                 <li><a href="#">ADD</a></li>
-                <li><a href="#" class="disabled">EDIT</a></li>
+                <li><a href="#">EDIT</a></li>
                 <li><a href="#">DELETE</a></li>
                 <li><a href="#">UPLOAD</a></li>
                 <li><a href="#">PDF</a></li>
@@ -92,13 +92,13 @@
           <th>Desc.</th>
           <th>Options</th>
         </tr>
-        @for($i = 0; $i < 1000; $i++)
+        @for($i = 0; $i < 50; $i++)
         <tr>
           <td><input type="checkbox" name="item" id="1" value="1"></td>
           <td>{{ $i + 1 }}</td>
           <td>4596</td>
           <td></td>
-          <td>129.10</td>
+          <td>$129.10</td>
           <td>58</td>
           <td>NEW</td>
           <td>LAMP</td>
@@ -108,6 +108,33 @@
       </table>
     </div>
   </div>
+
+  <div class="row">
+    <div class="columns large-12 inventory-upload">
+      <form action="/dashboard/upload/csv" method="POST" enctype="multipart/form-data">
+        <div class="row align-middle">
+          <div class="columns large-2">
+            <h2>Update Listing</h2>
+          </div>
+          <div class="columns large-10 download-link">
+            <a href="/download">Download CSV template</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns large-3">
+            <input type="radio" name="method" id="replace"><label for="replace">Replace</label>
+            <input type="radio" name="method" id="add"><label for="add">Add</label>
+          </div>
+          <div class="columns large-9">
+            <span>Select CSV file to upload:</span>
+            <input type="file" name="csv" id="file_csv" accept=".csv">
+            <input type="submit" value="Upload" class="danger">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
 </div>
 
 @endsection
